@@ -1,0 +1,34 @@
+{
+   "categories": [
+      {
+         "id": 1,
+         "category": "vegetables",
+         "image": "https://i.ibb.co/7R2HC3t/Vegetables.png"
+      },
+      {
+         "id": 2,
+         "category": "fruits",
+         "image": "https://i.ibb.co/cDzL53B/Fruits.png"
+      },
+      {
+         "id": 3,
+         "category": "juices",
+         "image": "https://i.ibb.co/wcpthtJ/Juices.png"
+      },
+      {
+         "id": 4,
+         "category": "berries",
+         "image": "https://i.ibb.co/Tv5qpmX/Berries.png"
+      },
+      {
+         "id": 5,
+         "category": "nuts",
+         "image": "https://i.ibb.co/sPs5xm4/Nuts.png"
+      },
+      {
+         "id": 6,
+         "category": "gluten free",
+         "image": "https://i.ibb.co/nbkrL1s/Gluten-free.png"
+      }
+   ]
+}
