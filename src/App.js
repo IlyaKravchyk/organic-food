@@ -4,7 +4,9 @@ import { AboutUs } from "./modules/AboutUs/AboutUs";
 import { ContactUs } from "./modules/ContactUs/ContactUs";
 import { Сategories } from "./modules/Сategories/Сategories";
 import { Layout } from "./modules/Layout/Layout";
-import "./styles/style.css"
+import { ProductsCategory } from "./modules/ProductsCategory/ProductsCategory";
+import { Product } from "./modules/Product/Product";
+import { Cart } from "./modules/Cart/Cart";
 
 function App() {
 
@@ -14,7 +16,10 @@ function App() {
             <Route index element={<Home />}></Route>
             <Route path='about' element={<AboutUs />}></Route>
             <Route path='contact' element={<ContactUs />}></Route>
+            <Route path='cart' element={<Cart />}></Route>
             <Route path='categories' element={<Сategories />}></Route>
+            <Route path="categories/:products" element={<ProductsCategory />}></Route>
+            <Route path="categories/:products/:productId" element={<Product />}></Route>
          </Route>
       </Routes >
    )

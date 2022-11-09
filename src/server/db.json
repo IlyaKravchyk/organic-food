@@ -30,5 +30,303 @@
          "category": "gluten free",
          "image": "https://i.ibb.co/nbkrL1s/Gluten-free.png"
       }
+   ],
+   "products": [
+      {
+         "category": "vegetables",
+         "id": 1,
+         "name": "potato",
+         "price": 10.00,
+         "promotionalPrice": 18.00,
+         "image": "https://i.ibb.co/qWdrYs0/vegatables2.png",
+         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard."
+      },
+      {
+         "category": "vegetables",
+         "id": 2,
+         "name": "tomatoes",
+         "price": 14.00,
+         "image": "https://i.ibb.co/86mLnth/vegatables1.png",
+         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard."
+      },
+      {
+         "category": "vegetables",
+         "id": 3,
+         "name": "cucumbers",
+         "price": 11.00,
+         "image": "https://i.ibb.co/9vMS68G/vegatables5.png",
+         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard."
+      },
+      {
+         "category": "vegetables",
+         "id": 4,
+         "name": "cabbage",
+         "price": 8.00,
+         "promotionalPrice": 18.00,
+         "image": "https://i.ibb.co/MBSk4Sw/vegatables3.png",
+         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard."
+      },
+      {
+         "category": "vegetables",
+         "id": 5,
+         "name": "carrot",
+         "price": 7.00,
+         "image": "https://i.ibb.co/BKQzFzX/vegatables4.png",
+         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard."
+      },
+      {
+         "category": "vegetables",
+         "id": 6,
+         "name": "asparagus",
+         "price": 7.00,
+         "image": "https://i.ibb.co/PtqWNWJ/vegatables6.png",
+         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard."
+      },
+      {
+         "category": "fruits",
+         "id": 7,
+         "name": "bananas",
+         "price": 10.00,
+         "promotionalPrice": 18.00,
+         "image": "https://i.ibb.co/nfTGLN6/banana.png",
+         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard."
+      },
+      {
+         "category": "fruits",
+         "id": 8,
+         "name": "apple",
+         "price": 14.00,
+         "image": "https://i.ibb.co/BZVQ41N/apple.png",
+         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard."
+      },
+      {
+         "category": "fruits",
+         "id": 9,
+         "name": "avocado",
+         "price": 11.00,
+         "image": "https://i.ibb.co/vHm2H4P/avocado.png",
+         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard."
+      },
+      {
+         "category": "fruits",
+         "id": 10,
+         "name": "orange",
+         "price": 8.00,
+         "promotionalPrice": 18.00,
+         "image": "https://i.ibb.co/1T2q4fN/orange.png",
+         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard."
+      },
+      {
+         "category": "fruits",
+         "id": 11,
+         "name": "pomegranate",
+         "price": 7.00,
+         "image": "https://i.ibb.co/RCVcNhp/grenade.png",
+         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard."
+      },
+      {
+         "category": "fruits",
+         "id": 12,
+         "name": "kiwi",
+         "price": 19.00,
+         "image": "https://i.ibb.co/hH9n3GW/kiwi.png",
+         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard."
+      },
+      {
+         "category": "juices",
+         "id": 13,
+         "name": "Pomegranate juice",
+         "price": 12.00,
+         "image": "https://i.ibb.co/vD8xYH9/pomegranate-juice.png",
+         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard."
+      },
+      {
+         "category": "juices",
+         "id": 14,
+         "name": "orange juice",
+         "price": 7.00,
+         "image": "https://i.ibb.co/fpmsQ1v/orange-juice.png",
+         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard."
+      },
+      {
+         "category": "juices",
+         "id": 15,
+         "name": "strawberry juice",
+         "price": 11.00,
+         "image": "https://i.ibb.co/mcQnHz7/strawberry-juice.png",
+         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard."
+      },
+      {
+         "category": "juices",
+         "id": 16,
+         "name": "apple juice",
+         "price": 5.00,
+         "promotionalPrice": 11.00,
+         "image": "https://i.ibb.co/bm4bHMM/apple-juice.png",
+         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard."
+      },
+      {
+         "category": "juices",
+         "id": 17,
+         "name": "peach juice",
+         "price": 19.00,
+         "image": "https://i.ibb.co/tsTMKBS/peach-juice.png",
+         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard."
+      },
+      {
+         "category": "juices",
+         "id": 18,
+         "name": "raspberry juice",
+         "price": 19.00,
+         "image": "https://i.ibb.co/xG3fbxv/raspberry-juice.png",
+         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard."
+      },
+      {
+         "category": "berries",
+         "id": 19,
+         "name": "cherry",
+         "price": 14.00,
+         "image": "https://i.ibb.co/FJsgs62/cherry.png",
+         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard."
+      },
+      {
+         "category": "berries",
+         "id": 20,
+         "name": "blueberry",
+         "price": 38.00,
+         "image": "https://i.ibb.co/Hx0ryS2/blueberry.png",
+         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard."
+      },
+      {
+         "category": "berries",
+         "id": 21,
+         "name": "raspberry",
+         "price": 16.00,
+         "image": "https://i.ibb.co/CmwstFK/raspberry.png",
+         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard."
+      },
+      {
+         "category": "berries",
+         "id": 22,
+         "name": "blackberry",
+         "price": 19.00,
+         "promotionalPrice": 27.00,
+         "image": "https://i.ibb.co/K0J0r8R/blackberry.png",
+         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard."
+      },
+      {
+         "category": "berries",
+         "id": 23,
+         "name": "fig",
+         "price": 30.00,
+         "image": "https://i.ibb.co/m8dbwQ7/fig.png",
+         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard."
+      },
+      {
+         "category": "berries",
+         "id": 24,
+         "name": "rose hip",
+         "price": 19.00,
+         "image": "https://i.ibb.co/Ybrzfp8/rose-hip.png",
+         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard."
+      },
+      {
+         "category": "nuts",
+         "id": 25,
+         "name": "cashew nuts",
+         "price": 19.00,
+         "image": "https://i.ibb.co/zXbtkrN/cashew.png",
+         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard."
+      },
+      {
+         "category": "nuts",
+         "id": 26,
+         "name": "walnut",
+         "price": 22.00,
+         "image": "https://i.ibb.co/BBPR64x/walnut.png",
+         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard."
+      },
+      {
+         "category": "nuts",
+         "id": 27,
+         "name": "almond",
+         "price": 20.00,
+         "image": "https://i.ibb.co/4dNGnS9/almond.png",
+         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard."
+      },
+      {
+         "category": "nuts",
+         "id": 28,
+         "name": "brazil nut",
+         "price": 35.00,
+         "promotionalPrice": 49.00,
+         "image": "https://i.ibb.co/YWCHNqH/brazil.png",
+         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard."
+      },
+      {
+         "category": "nuts",
+         "id": 29,
+         "name": "pistachios",
+         "price": 27.00,
+         "image": "https://i.ibb.co/pxSRfqq/pistachios.png",
+         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard."
+      },
+      {
+         "category": "nuts",
+         "id": 30,
+         "name": "hazelnut",
+         "price": 17.00,
+         "image": "https://i.ibb.co/d794k2S/hazelnut.png",
+         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard."
+      },
+      {
+         "category": "gluten free",
+         "id": 31,
+         "name": "pasta",
+         "price": 4.00,
+         "image": "https://i.ibb.co/BN4MZkQ/pasta.png",
+         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard."
+      },
+      {
+         "category": "gluten free",
+         "id": 32,
+         "name": "flour",
+         "price": 17.00,
+         "image": "https://i.ibb.co/RSsY8rP/flour.png",
+         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard."
+      },
+      {
+         "category": "gluten free",
+         "id": 33,
+         "name": "bread",
+         "price": 17.00,
+         "image": "https://i.ibb.co/YjJXL8j/bread.png",
+         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard."
+      },
+      {
+         "category": "gluten free",
+         "id": 34,
+         "name": "protein bars",
+         "price": 17.00,
+         "promotionalPrice": 49.00,
+         "image": "https://i.ibb.co/sv6p6ss/protein.png",
+         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard."
+      },
+      {
+         "category": "gluten free",
+         "id": 35,
+         "name": "snacks",
+         "price": 17.00,
+         "image": "https://i.ibb.co/r0rHhwr/snack.png",
+         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard."
+      },
+      {
+         "category": "gluten free",
+         "id": 36,
+         "name": "cereals",
+         "price": 17.00,
+         "image": "https://i.ibb.co/QYYzwJv/cereals.png",
+         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard."
+      }
    ]
 }
