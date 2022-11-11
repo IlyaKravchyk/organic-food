@@ -10,7 +10,7 @@ export const ContactUs = ({ classWrapper, classTitle, classInfo, classSubtitle }
             classInfo={classInfo}
             classSubtitle={classSubtitle}
             subtitleDescription="Email"
-            link="needhelp@organick.com"
+            link="mailto:needhelp@organick.com"
             linkDescription="needhelp@organick.com"
          />
          <Item

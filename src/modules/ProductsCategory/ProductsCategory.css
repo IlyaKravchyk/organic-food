@@ -30,7 +30,7 @@
 }
 
 .products__image img {
-   height: 100%;
+   width: 100%;
 }
 
 .products__name {

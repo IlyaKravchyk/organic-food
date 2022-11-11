@@ -18,6 +18,10 @@ body {
    height: 100%;
 }
 
+.ant-image-preview-img {
+   width: 600px;
+}
+
 .container {
    max-width: 1380px;
    width: 85%;
@@ -30,8 +34,10 @@ body {
    min-height: 100%;
 }
 
+
 .main {
    flex: 1 1 auto;
+   padding-bottom: 80px;
 }
 
 .main .title {

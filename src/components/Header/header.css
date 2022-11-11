@@ -35,7 +35,7 @@
 
 /*cart*/
 
-.cart__wrapper {
+.header__cart-wrapper {
    border: 1px solid #D4D4D4;
    border-radius: 33px;
    display: flex;
@@ -47,7 +47,7 @@
 }
 
 
-.cart__image {
+.header__cart-image {
    background-color: #274C5B;
    display: flex;
    justify-content: center;

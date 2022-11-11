@@ -12,12 +12,12 @@ export const HeaderCart = observer(() => {
 
    return (
       <div className="header__item">
-         <div className="cart__wrapper" onClick={handleClick}>
-            <div className="cart__image">
+         <div className="header__cart-wrapper" onClick={handleClick}>
+            <div className="header__cart-image">
                <img src="https://i.ibb.co/J2B5wCN/header-cart.png" alt="cart" />
             </div>
-            <div className="cart__description">
-               cart <span className="cart__count">{getCartCount}</span>
+            <div className="header__cart-description">
+               cart <span className="header__cart-count">{getCartCount}</span>
             </div>
          </div >
       </div >
