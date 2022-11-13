@@ -1,6 +1,6 @@
 export const AboutUs = () => {
    return (
-      <div>
+      <div className="container">
          Hello About Us!
       </div>
    )

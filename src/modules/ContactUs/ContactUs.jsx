@@ -1,6 +1,6 @@
 export const ContactUs = () => {
    return (
-      <div>
+      <div className="container">
          Hello ContactUs!
       </div>
    )

@@ -6,10 +6,10 @@ import { Button } from "../../components/Button/Button";
 import { observer } from "mobx-react-lite";
 import { ButtonBack } from "../../components/ButtonBack/ButtonBack";
 import "./ProductsCategory.css";
-import cartStore from "../../stores/CartStore"
+import {CartStore} from "../../stores/CartStore"
 
 export const ProductsCategory = observer(() => {
-
+   const [cartStore] = useState(new CartStore())
    const { addToCart } = cartStore
    const [productsCategoryStore] = useState(new ProductsCategoryStore())
    const { categoriesProducts, loadCategoriesProducts } = productsCategoryStore
@@ -21,7 +21,8 @@ export const ProductsCategory = observer(() => {
 
 
    return (
-      <div className="products__wrapper">
+<div className="container">
+<div className="products__wrapper">
          <MainTitle
             className="product__title"
             titleText={products}
@@ -57,5 +58,7 @@ export const ProductsCategory = observer(() => {
             className="products__button-back button-back"
             text="go to back"
          />
-      </div >)
+      </div >
+</div>
+      )
 })

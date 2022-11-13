@@ -14,7 +14,8 @@ export const Сategories = observer(() => {
    }, [])
 
    return (
-      <div className="categories__wrapper">
+      <div className="container">
+         <div className="categories__wrapper">
          <MainTitle
             className="categories__title title"
             titleText="categories"
@@ -35,6 +36,7 @@ export const Сategories = observer(() => {
                )
             })}
          </div>
+      </div>
       </div>
    )
 })

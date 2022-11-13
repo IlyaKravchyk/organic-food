@@ -1,4 +1,4 @@
-import cartStore from "../../stores/CartStore";
+import {CartStore} from "../../stores/CartStore";
 import { Image } from 'antd';
 import { observer } from "mobx-react-lite";
 import "./cart.css"
@@ -6,13 +6,15 @@ import { CartCount } from "./components/CartCount";
 import { CartTotal } from "./components/CartTotal";
 import { Button } from "../../components/Button/Button";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 export const Cart = observer(() => {
-
+   const [cartStore] = useState(new CartStore())
    const { cart, getSumAllProduct, deteletedProduct, countUp, countDown } = cartStore;
 
    return (
-      <div className="cart__container">
+      <div className="container">
+         <div className="cart__container">
          {!cart.length &&
             <div className="cart__empty">
                Cart is empty.
@@ -64,6 +66,7 @@ export const Cart = observer(() => {
             cart={cart}
             getSumAllProduct={getSumAllProduct}
          />
+      </div>
       </div>
    )
 })
