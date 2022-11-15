@@ -1,11 +1,9 @@
 import { useNavigate } from "react-router-dom";
-import {CartStore} from "../../../stores/CartStore";
+import cartStore from "../../../stores/CartStore";
 import { observer } from "mobx-react-lite";
 import { useState } from "react";
 
 export const HeaderCart = observer(() => {
-
-   const [cartStore] = useState(new CartStore())
 
    const { getCartCount } = cartStore
    const navigate = useNavigate()

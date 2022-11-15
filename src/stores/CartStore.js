@@ -1,6 +1,6 @@
 import { makeAutoObservable } from "mobx";
 
-export class CartStore {
+class CartStore {
 
    cart = JSON.parse(localStorage.getItem('localCart')) || [];
 
@@ -61,3 +61,5 @@ export class CartStore {
    }
 }
 
+const cartStore = new CartStore()
+export default cartStore

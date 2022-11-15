@@ -12,6 +12,17 @@
    box-sizing: border-box;
 }
 
+input {
+   outline: none;
+   width: 100%;
+   border: 2px solid #274C5B;
+   border-radius: 16px;
+   padding: 15px 0 15px 40px;
+}
+
+input:focus {
+   border: 2px solid #30bdf0;
+}
 
 html,
 body {
@@ -19,7 +30,8 @@ body {
 }
 
 .ant-image-preview-img {
-   width: 600px;
+   height: 80vh;
+
 }
 
 .container {
@@ -47,7 +59,7 @@ body {
    font-weight: 700;
    text-transform: capitalize;
    text-align: center;
-   padding: 30px 0 50px 0;
+   padding: 15px 0 50px 0;
 }
 
 .logo {

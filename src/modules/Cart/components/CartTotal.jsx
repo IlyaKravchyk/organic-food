@@ -1,6 +1,6 @@
 import { Button } from "../../../components/Button/Button"
 
-export const CartTotal = ({ cart, getSumAllProduct }) => {
+export const CartTotal = ({ cart, getSumAllProduct, setIsModalDeliveryOpen, setIsModalPayOpen }) => {
    return (
       <>
          {(cart.length !== 0) && <div className="cart__total">
@@ -9,11 +9,15 @@ export const CartTotal = ({ cart, getSumAllProduct }) => {
             </div>
             <Button
                className="cart__btn-delivery button"
-               textButton="Delivery"
+               textButton="delivery"
+               action={setIsModalDeliveryOpen}
+               dataProduct={true}
             />
             <Button
                className="cart__btn-pay button"
                textButton="Pay"
+               action={setIsModalPayOpen}
+               dataProduct={true}
             />
          </div>
          }

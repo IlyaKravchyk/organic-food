@@ -80,6 +80,12 @@
 .fa.fa-trash-o {
    font-size: 38px;
    cursor: pointer;
+   transition: .7s;
+}
+
+.fa.fa-trash-o:hover {
+   color: #f00;
+   transition: .15s;
 }
 
 .cart__btn-delivery.button:active,
@@ -120,5 +126,71 @@
 
 .cart__empty-btn.button {
    margin-top: 40px;
+}
 
+.modal__input {
+   margin-bottom: 15px;
+}
+
+.modal__button.button {
+   background-color: green;
+}
+
+
+.modal__delivery,
+.modal__pay {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   background-color: rgba(0, 0, 0, 0.5);
+   display: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   opacity: 0;
+   pointer-events: none;
+   transition: .5s all;
+}
+
+.modal__delivery.active,
+.modal__pay.active {
+   opacity: 1;
+   transition: .5s all;
+   pointer-events: all;
+}
+
+.modal__delivery-wrapper,
+.modal__pay-wrapper {
+   padding: 25px;
+   border-radius: 20px;
+   width: 50%;
+   background-color: #fff;
+   scale: 0;
+   transition: .4s;
+   position: relative;
+}
+
+.modal__delivery-wrapper.active,
+.modal__pay-wrapper.active {
+   scale: 1;
+   transition: .5s;
+}
+
+.modal__delivery-title,
+.modal__pay-title {
+   color: #274C5B;
+   font-weight: 700;
+   font-size: 36px;
+   text-align: center;
+   text-transform: capitalize;
+}
+
+.modal__btn-out {
+   font-size: 24px;
+   cursor: pointer;
+   position: absolute;
+   right: 10px;
+   top: 5px;
 }

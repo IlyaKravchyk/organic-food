@@ -24,7 +24,7 @@ export const Home = () => {
                fade
                pauseOnHover={true}
                pauseOnDotsHover={true}
-               ref = {ref}
+               ref={ref}
             >
                <div className='home__slider'>
                   <div className='home__slider-image'>
@@ -46,21 +46,21 @@ export const Home = () => {
                </div>
             </Carousel>
 
-               <button className='home__btn-back' onClick={()=>ref.current.prev()}>
-                  <i className="fa fa-angle-left" aria-hidden="true"></i>
-               </button>
+            <button className='home__btn-back' onClick={() => ref.current.prev()}>
+               <i className="fa fa-angle-left" aria-hidden="true"></i>
+            </button>
 
 
-               <button className='home__btn-next' onClick={()=>ref.current.next()}>
-                  <i className="fa fa-angle-right" aria-hidden="true"></i>
-               </button>
+            <button className='home__btn-next' onClick={() => ref.current.next()}>
+               <i className="fa fa-angle-right" aria-hidden="true"></i>
+            </button>
          </div>
-            <Link to = "/categories">
-               <Button
-                  className="home__btn-shop button"
-                  textButton = "go shop"
-               />
-            </Link>
+         <Link to="/categories">
+            <Button
+               className="home__btn-shop button"
+               textButton="go shop"
+            />
+         </Link>
       </div>
    )
 }

@@ -1,6 +1,6 @@
 import { Item } from "./components/Item"
 
-export const ContactUs = ({ classWrapper, classTitle, classInfo, classSubtitle }) => {
+export const ContactComponent = ({ classWrapper, classTitle, classInfo, classSubtitle }) => {
    return (
       <div className={classWrapper}>
          <h2 className={classTitle}>

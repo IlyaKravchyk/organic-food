@@ -16,27 +16,27 @@ export const Сategories = observer(() => {
    return (
       <div className="container">
          <div className="categories__wrapper">
-         <MainTitle
-            className="categories__title title"
-            titleText="categories"
-         />
-         <div className="categories__items">
-            {!categoriesData && <div className="loader"></div>}
-            {categoriesData && categoriesData.map(({ id, category, image }) => {
-               return (
-                  <div className="categories__item" key={id}>
-                     <div className="categories__image">
-                        <Link to={category} >
-                           <img src={image} alt={category} />
-                           <span className="categories__name">{category}</span>
-                        </Link>
-                     </div>
+            <MainTitle
+               className="categories__title title"
+               titleText="categories"
+            />
+            <div className="categories__items">
+               {!categoriesData && <div className="loader"></div>}
+               {categoriesData && categoriesData.map(({ id, category, image }) => {
+                  return (
+                     <div className="categories__item" key={id}>
+                        <div className="categories__image">
+                           <Link to={category} >
+                              <img src={image} alt={category} />
+                              <span className="categories__name">{category}</span>
+                           </Link>
+                        </div>
 
-                  </div>
-               )
-            })}
+                     </div>
+                  )
+               })}
+            </div>
          </div>
-      </div>
       </div>
    )
 })

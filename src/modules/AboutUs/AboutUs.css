@@ -1,0 +1,53 @@
+.about__wrapper * {
+   font-family: 'Open Sans';
+   color: #525C60;
+}
+
+.about__items {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 50px;
+}
+
+.about__item {
+   width: calc(50% - 30px)
+}
+
+.about__image img {
+   width: 100%;
+}
+
+.about__item-title {
+   color: #274C5B;
+   font-family: 'Roboto';
+   font-weight: 700;
+   font-size: 45px;
+   line-height: 58px;
+   margin-bottom: 20px;
+}
+
+.about__subtitle {
+   margin-bottom: 55px;
+}
+
+.description__item {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.description__image {
+   margin-right: 40px;
+}
+
+.description__item {
+   margin-bottom: 30px;
+}
+
+.description__title {
+   font-family: 'Roboto';
+   font-size: 25px;
+   line-height: 35px;
+   color: #274C5B;
+}
