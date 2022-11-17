@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import { Button } from "../../components/Button/Button";
-import { MainTitle } from "../../components/MainTitle/MainTitle";
+import { Button } from "../../components/shared/Buttons/Button";
+import { MainTitle } from "../../components//shared/MainTitle/MainTitle";
 import "./AboutUs.css";
 
 export const AboutUs = () => {

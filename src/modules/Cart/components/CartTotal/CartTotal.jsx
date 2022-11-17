@@ -1,6 +1,8 @@
-import { Button } from "../../../components/Button/Button"
+import { Button } from "../../../../components/shared/Buttons/Button";
+import { ModalDelivery } from "./ModalDelivery";
+import { ModalPay } from "./ModalPay";
 
-export const CartTotal = ({ cart, getSumAllProduct, setIsModalDeliveryOpen, setIsModalPayOpen }) => {
+export const CartTotal = ({ cart, getSumAllProduct, setIsModalDeliveryOpen, isModalDeliveryOpen, setIsModalPayOpen, isModalPayOpen }) => {
    return (
       <>
          {(cart.length !== 0) && <div className="cart__total">
@@ -18,6 +20,14 @@ export const CartTotal = ({ cart, getSumAllProduct, setIsModalDeliveryOpen, setI
                textButton="Pay"
                action={setIsModalPayOpen}
                dataProduct={true}
+            />
+            <ModalDelivery
+               isModalDeliveryOpen={isModalDeliveryOpen}
+               setIsModalDeliveryOpen={setIsModalDeliveryOpen}
+            />
+            <ModalPay
+               isModalPayOpen={isModalPayOpen}
+               setIsModalPayOpen={setIsModalPayOpen}
             />
          </div>
          }

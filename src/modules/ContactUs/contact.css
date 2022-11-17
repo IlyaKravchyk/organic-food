@@ -18,6 +18,10 @@ input::placeholder {
    margin-left: 100px;
 }
 
+.contact__form-wrapper {
+   width: calc(50% - 15px);
+}
+
 .contact__title {
    color: #274C5B;
    text-transform: capitalize;
@@ -46,31 +50,6 @@ input::placeholder {
    margin-bottom: 15px;
 }
 
-.form {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-}
-
-.form__items {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
-   align-items: center;
-   width: 100%;
-}
-
-.form__item {
-   width: calc(50% - 15px);
-   margin-bottom: 30px;
-}
-
-.form__name {
-   color: #274C5B;
-   font-weight: 700;
-   text-transform: capitalize;
-}
 
 .form__message {
    margin-bottom: 40px;

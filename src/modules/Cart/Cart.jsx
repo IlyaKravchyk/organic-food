@@ -2,19 +2,18 @@ import cartStore from "../../stores/CartStore";
 import { Image } from 'antd';
 import { observer } from "mobx-react-lite";
 import { CartCount } from "./components/CartCount";
-import { CartTotal } from "./components/CartTotal";
-import { Button } from "../../components/Button/Button";
+import { CartTotal } from "./components/CartTotal/CartTotal";
+import { Button } from "../../components/shared/Buttons/Button";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { ModalDelivery } from "./components/ModalDelivery";
-import { ModalPay } from "./components/ModalPay";
 import "./cart.css"
 
 export const Cart = observer(() => {
 
    const { cart, getSumAllProduct, deteletedProduct, countUp, countDown } = cartStore;
    const [isModalDeliveryOpen, setIsModalDeliveryOpen] = useState(false);
-   const [isModalPayOpen, setIsModalPayOpen] = useState(false)
+   const [isModalPayOpen, setIsModalPayOpen] = useState(false);
+
 
    return (
       <div className="container">
@@ -67,18 +66,14 @@ export const Cart = observer(() => {
                   </div>
                )
             })}
-            <ModalDelivery
-               isModalDeliveryOpen={isModalDeliveryOpen}
-               setIsModalDeliveryOpen={setIsModalDeliveryOpen} />
-            <ModalPay
-               isModalPayOpen={isModalPayOpen}
-               setIsModalPayOpen={setIsModalPayOpen}
-            />
+
             <CartTotal
                cart={cart}
                getSumAllProduct={getSumAllProduct}
                setIsModalDeliveryOpen={setIsModalDeliveryOpen}
                setIsModalPayOpen={setIsModalPayOpen}
+               isModalDeliveryOpen={isModalDeliveryOpen}
+               isModalPayOpen={isModalPayOpen}
             />
          </div>
       </div>

@@ -1,6 +1,6 @@
 import { makeAutoObservable, runInAction } from "mobx";
 
-export class ProductsCategoryStore {
+class ProductsCategoryStore {
 
    categoriesProducts = undefined;
 
@@ -21,3 +21,7 @@ export class ProductsCategoryStore {
    }
 
 }
+
+const productsCategoryStore = new ProductsCategoryStore();
+
+export default productsCategoryStore

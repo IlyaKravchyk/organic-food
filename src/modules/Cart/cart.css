@@ -128,15 +128,6 @@
    margin-top: 40px;
 }
 
-.modal__input {
-   margin-bottom: 15px;
-}
-
-.modal__button.button {
-   background-color: green;
-}
-
-
 .modal__delivery,
 .modal__pay {
    position: fixed;

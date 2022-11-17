@@ -1,8 +1,8 @@
-import { MainTitle } from '../../components/MainTitle/MainTitle';
+import { MainTitle } from '../../components/shared/MainTitle/MainTitle';
 import { useRef } from 'react';
 import { Carousel } from 'antd';
 import { Link } from 'react-router-dom';
-import { Button } from '../../components/Button/Button';
+import { Button } from '../../components/shared/Buttons/Button';
 import "./home.css";
 
 

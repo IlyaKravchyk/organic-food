@@ -1,23 +1,21 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
-import { ProductsCategoryStore } from "./store/ProductsCategoryStore";
-import { MainTitle } from "../../components/MainTitle/MainTitle";
-import { Button } from "../../components/Button/Button";
+import productsCategoryStore from "./store/ProductsCategoryStore";
+import { MainTitle } from "../../components/shared/MainTitle/MainTitle";
+import { Button } from "../../components/shared/Buttons/Button";
 import { observer } from "mobx-react-lite";
-import { ButtonBack } from "../../components/ButtonBack/ButtonBack";
+import { ButtonBack } from "../../components/shared/Buttons/ButtonBack";
 import cartStore from "../../stores/CartStore"
 import "./ProductsCategory.css";
 
 export const ProductsCategory = observer(() => {
    const { addToCart } = cartStore
-   const [productsCategoryStore] = useState(new ProductsCategoryStore())
    const { categoriesProducts, loadCategoriesProducts } = productsCategoryStore
    const { products } = useParams()
 
    useEffect(() => {
       loadCategoriesProducts()
    }, [])
-
 
    return (
       <div className="container">
