@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { observer } from "mobx-react-lite";
 import { Button } from "../../components/shared/Buttons/Button";
-import { MainTitle } from "../../components/shared/MainTitle/MainTitle";
+import { MainTitle } from "../../components/shared/MainTitle";
 import { ButtonBack } from "../../components/shared/Buttons/ButtonBack"
 import cartStore from "../../stores/CartStore";
 import { Image } from 'antd';

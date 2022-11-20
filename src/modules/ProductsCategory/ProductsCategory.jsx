@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import productsCategoryStore from "./store/ProductsCategoryStore";
-import { MainTitle } from "../../components/shared/MainTitle/MainTitle";
+import { MainTitle } from "../../components/shared/MainTitle";
 import { Button } from "../../components/shared/Buttons/Button";
 import { observer } from "mobx-react-lite";
 import { ButtonBack } from "../../components/shared/Buttons/ButtonBack";

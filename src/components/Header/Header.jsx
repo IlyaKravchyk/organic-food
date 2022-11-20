@@ -1,6 +1,6 @@
-import { HeaderNav } from "./components/HeaderNav";
-import { HeaderLogo } from "./components/HeaderLogo";
-import { HeaderCart } from "./components/HeaderCart";
+import { HeaderNav } from "./HeaderNav/HeaderNav";
+import { Logo } from "../shared/Logo";
+import { HeaderCart } from "./HeaderCart";
 import "./header.css"
 
 export const Header = () => {
@@ -10,7 +10,7 @@ export const Header = () => {
          <header className="header container">
             <div className="header__wrapper">
                <div className="header__items">
-                  <HeaderLogo />
+                  <Logo className="header__item logo" />
                   <HeaderNav />
                   <HeaderCart />
                </div>

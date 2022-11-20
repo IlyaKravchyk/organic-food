@@ -8,8 +8,6 @@
    padding: 40px 0;
 }
 
-/*NAV*/
-
 .nav__items {
    display: flex;
    justify-content: center;
@@ -33,8 +31,6 @@
    transition: .2s;
 }
 
-/*cart*/
-
 .header__cart-wrapper {
    border: 1px solid #D4D4D4;
    border-radius: 33px;
@@ -44,8 +40,14 @@
    width: 160px;
    height: 70px;
    cursor: pointer;
+   transition: .5s;
 }
 
+.header__cart-wrapper:hover {
+   background: #25c495;
+   transition: .3s;
+   color: #fff;
+}
 
 .header__cart-image {
    background-color: #274C5B;

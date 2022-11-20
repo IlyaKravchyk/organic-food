@@ -15,6 +15,12 @@
    display: flex;
    align-items: center;
    justify-content: center;
+   transition: .3s;
+}
+
+.categories__item:hover {
+   scale: 1.05;
+   transition: .3s;
 }
 
 .categories__image img {
@@ -41,5 +47,3 @@
    left: 50%;
    transform: translateX(-50%)
 }
-
-.categories__link {}

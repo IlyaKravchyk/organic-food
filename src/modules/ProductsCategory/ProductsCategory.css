@@ -29,7 +29,13 @@
    margin-bottom: 40px;
 }
 
+.products__image img:hover {
+   scale: 1.05;
+   transition: .3s;
+}
+
 .products__image img {
+   transition: .3s;
    width: 100%;
 }
 

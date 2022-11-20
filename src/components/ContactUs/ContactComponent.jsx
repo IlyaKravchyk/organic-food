@@ -1,4 +1,4 @@
-import { Item } from "./components/Item"
+import { ItemContactComponent } from "./ItemContactComponent"
 
 export const ContactComponent = ({ classWrapper, classTitle, classInfo, classSubtitle }) => {
    return (
@@ -6,21 +6,21 @@ export const ContactComponent = ({ classWrapper, classTitle, classInfo, classSub
          <h2 className={classTitle}>
             contact us
          </h2>
-         <Item
+         <ItemContactComponent
             classInfo={classInfo}
             classSubtitle={classSubtitle}
             subtitleDescription="Email"
             link="mailto:needhelp@organick.com"
             linkDescription="needhelp@organick.com"
          />
-         <Item
+         <ItemContactComponent
             classInfo={classInfo}
             classSubtitle={classSubtitle}
             subtitleDescription="Phone"
             link="tel:80291234567"
             linkDescription="80291234567"
          />
-         <Item
+         <ItemContactComponent
             classInfo={classInfo}
             classSubtitle={classSubtitle}
             subtitleDescription="address"

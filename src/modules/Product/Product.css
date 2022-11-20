@@ -58,3 +58,7 @@
    justify-content: center;
    justify-content: space-between;
 }
+
+.product__button-add.button {
+   margin: 0;
+}

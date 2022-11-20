@@ -71,9 +71,3 @@ input::placeholder {
 .form__textarea::placeholder {
    text-transform: capitalize;
 }
-
-.form__btn.button {}
-
-.form__button {
-   margin-right: auto;
-}

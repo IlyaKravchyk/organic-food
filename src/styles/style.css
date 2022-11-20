@@ -80,6 +80,19 @@ textarea:focus {
    height: 60px;
    border-radius: 16px;
    cursor: pointer;
+   transition: .3s;
+   scale: 1;
+}
+
+.button:hover {
+   scale: 1.07;
+   transition: .3s;
+}
+
+.button:active {
+   scale: 0.95;
+   transition: .1s;
+   background-color: #13bf1c;
 }
 
 .button-back {
@@ -95,6 +108,12 @@ textarea:focus {
    height: 60px;
    border-radius: 16px;
    cursor: pointer;
+   transition: .3s;
+}
+
+.button-back:hover {
+   scale: 1.07;
+   transition: .3s;
 }
 
 .form {

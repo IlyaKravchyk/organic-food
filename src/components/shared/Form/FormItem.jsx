@@ -1,5 +1,5 @@
 
-export const FormItem = ({ type, value, setValue, placeholder, children }) => {
+export const FormItem = ({ type, placeholder, value, setValue, children }) => {
 
    const changeHandler = (event) => {
       setValue(event.target.value)

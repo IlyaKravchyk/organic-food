@@ -1,4 +1,4 @@
-export const Item = ({ classInfo, classSubtitle, subtitleDescription, link, linkDescription }) => {
+export const ItemContactComponent = ({ classInfo, classSubtitle, subtitleDescription, link, linkDescription }) => {
    return (
       <div className={classInfo}>
          <p className={classSubtitle}>{subtitleDescription}</p>

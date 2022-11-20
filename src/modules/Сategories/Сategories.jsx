@@ -1,6 +1,6 @@
 import { observer } from "mobx-react-lite";
 import { useEffect } from "react";
-import { MainTitle } from "../../components/shared/MainTitle/MainTitle";
+import { MainTitle } from "../../components/shared/MainTitle";
 import categoryStore from "./store/CategoryStore";
 import "./categories.css";
 import { Link } from "react-router-dom";

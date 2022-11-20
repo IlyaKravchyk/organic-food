@@ -1,6 +1,6 @@
 import { ContactComponent } from "../ContactUs/ContactComponent";
-import { FooterLogos } from "./components/FooterLogos";
-import { FooterUtility } from "./components/FooterUtility";
+import { FooterLogos } from "./FooterLogos/FooterLogos";
+import { FooterUtility } from "./FooterUtility/FooterUtility";
 import "./footer.css"
 
 export const Footer = () => {

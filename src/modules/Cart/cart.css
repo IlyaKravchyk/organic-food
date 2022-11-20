@@ -85,13 +85,8 @@
 
 .fa.fa-trash-o:hover {
    color: #f00;
-   transition: .15s;
-}
-
-.cart__btn-delivery.button:active,
-.cart__btn-pay.button:active {
-   background-color: green;
-   transition: .1s;
+   transition: .2s;
+   scale: 1.15;
 }
 
 .cart__count-down,
