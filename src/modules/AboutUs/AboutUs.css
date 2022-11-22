@@ -3,14 +3,14 @@
    color: #525C60;
 }
 
-.about__items {
+.about__block-inform {
    display: flex;
    justify-content: space-between;
    align-items: center;
    margin-bottom: 50px;
 }
 
-.about__item {
+.about__items {
    width: calc(50% - 30px)
 }
 

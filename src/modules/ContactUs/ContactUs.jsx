@@ -50,21 +50,38 @@ export const ContactUs = () => {
 
             <Form buttonName="send" sumbitHandler={clearForm} isActive={isActive} >
                <div className="contact__form-wrapper">
-                  <FormItem type="text" placeholder="your name" value={name} setValue={setName}>
-                     name:
-                  </FormItem>
+                  <FormItem
+                     type="text"
+                     placeholder="your name"
+                     value={name}
+                     setValue={setName}
+                     text="name:"
+                  />
 
-                  <FormItem type="email" placeholder="adrdress" value={mail} setValue={setMail}>
-                     adrdress:
-                  </FormItem>
+                  <FormItem
+                     type="email"
+                     placeholder="adrdress"
+                     value={mail}
+                     setValue={setMail}
+                     text="adrdress:"
+                  />
                </div>
                <div className="contact__form-wrapper">
-                  <FormItem type="text" placeholder="our company name" value={company} setValue={setCompany}>
-                     company:
-                  </FormItem>
-                  <FormItem type="text" placeholder="how we can help" value={subject} setValue={setSubject}>
-                     subject:
-                  </FormItem>
+                  <FormItem
+                     type="text"
+                     placeholder="our company name"
+                     value={company}
+                     setValue={setCompany}
+                     text="company:"
+                  />
+
+                  <FormItem
+                     type="text"
+                     placeholder="how we can help"
+                     value={subject}
+                     setValue={setSubject}
+                     text="subject:"
+                  />
                </div>
                <div className="form__message">
                   <div className="form__name">message</div>

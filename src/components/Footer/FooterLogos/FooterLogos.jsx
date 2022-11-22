@@ -1,5 +1,5 @@
 import { Logo } from '../../shared/Logo';
-import { FooterLogosIcon } from './FooterLogosIcon';
+import { FooterLogosIcon } from './FooterLogosIcon/FooterLogosIcon';
 
 
 export const FooterLogos = () => {

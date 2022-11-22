@@ -1,30 +1,37 @@
-import { FooterUtilityPage } from "./FooterUtilityPage"
+import { FooterUtilityPage } from "./FooterUtilityPage/FooterUtilityPage"
 
 export const FooterUtility = () => {
    return (
       <div className="footer__item utility">
          <h2 className="footer__title ">utility pages</h2>
          <div className="footer__pages">
-            <FooterUtilityPage linkPage="#">
-               style guide
-            </FooterUtilityPage>
+            <FooterUtilityPage
+               linkPage="#"
+               text="style guide"
+            />
 
-            <FooterUtilityPage linkPage="#">
-               protected
-            </FooterUtilityPage>
+            <FooterUtilityPage
+               linkPage="#"
+               text="protected"
+            />
 
-            <FooterUtilityPage linkPage="#">
-               page not found
-            </FooterUtilityPage>
 
-            <FooterUtilityPage linkPage="#">
-               changelog
-            </FooterUtilityPage>
+            <FooterUtilityPage
+               linkPage="#"
+               text="page not found"
+            />
 
-            <FooterUtilityPage linkPage="#">
-               licenses
-            </FooterUtilityPage>
+            <FooterUtilityPage
+               linkPage="#"
+               text="changelog"
+            />
+
+            <FooterUtilityPage
+               linkPage="#"
+               text="licenses"
+            />
+
          </div>
-      </div>
+      </div >
    )
 }

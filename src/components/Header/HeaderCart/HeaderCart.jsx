@@ -1,19 +1,14 @@
-import { useNavigate } from "react-router-dom";
-import cartStore from "../../stores/CartStore";
+
+import cartStore from "../../../stores/CartStore";
 import { observer } from "mobx-react-lite";
 
-export const HeaderCart = observer(() => {
+export const HeaderCart = observer((porps) => {
 
    const { getCartCount } = cartStore
-   const navigate = useNavigate()
-
-   const handleClick = () => {
-      navigate('/cart')
-   }
 
    return (
       <div className="header__item">
-         <div className="header__cart-wrapper" onClick={handleClick}>
+         <div className="header__cart-wrapper" onClick={porps.handleClick}>
             <div className="header__cart-image">
                <img src="https://i.ibb.co/J2B5wCN/header-cart.png" alt="cart" />
             </div>

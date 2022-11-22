@@ -1,4 +1,4 @@
-import { Button } from "../../../components/shared/Buttons/Button"
+import { Button } from "../../../../components/shared/Buttons/Button"
 
 export const CartCount = ({ count, countUp, countDown, productId }) => {
 

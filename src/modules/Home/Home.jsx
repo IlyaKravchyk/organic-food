@@ -12,7 +12,7 @@ export const Home = () => {
             className="home__title title"
             titleText="Welcome to the organic food store"
          />
-         <HomeCarousel></HomeCarousel>
+         <HomeCarousel />
          <Link to="/categories">
             <Button
                className="home__btn-shop button"

@@ -1,6 +1,6 @@
-import { Button } from "../../../../components/shared/Buttons/Button";
-import { ModalDelivery } from "./ModalDelivery";
-import { ModalPay } from "./ModalPay";
+import { Button } from "../../../components/shared/Buttons/Button";
+import { ModalDelivery } from "./ModalDelivery/ModalDelivery";
+import { ModalPay } from "./ModalPay/ModalPay";
 
 export const CartTotal = ({ cart, getSumAllProduct, setIsModalDeliveryOpen, isModalDeliveryOpen, setIsModalPayOpen, isModalPayOpen }) => {
    return (
