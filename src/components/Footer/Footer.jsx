@@ -1,14 +1,16 @@
 import { ContactComponent } from "../ContactUs/ContactComponent";
 import { FooterLogos } from "./FooterLogos/FooterLogos";
 import { FooterUtility } from "./FooterUtility/FooterUtility";
-import "./footer.css"
+import "./Footer.css";
+import "./FooterMedia.css"
 
 export const Footer = () => {
    return (
       <footer className="footer container">
          <div className="footer__items">
             <ContactComponent
-               classWrapper="footer__item contacts"
+               classWrapperComponents="footer__contacts-information"
+               classWrapperInfo="footer__item contacts"
                classTitle="footer__title"
                classInfo="footer__info"
                classSubtitle="footer__subtitle"

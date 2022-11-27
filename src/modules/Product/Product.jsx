@@ -3,8 +3,10 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { observer } from "mobx-react-lite";
 import cartStore from "../../stores/CartStore";
-import "./Product.css";
 import { ProductItems } from "./ProductItems/ProductItems";
+import "./Product.css";
+import "./ProductMedia.css";
+
 
 export const Product = observer(() => {
 

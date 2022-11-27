@@ -3,7 +3,9 @@ import { useEffect } from "react";
 import { MainTitle } from "../../components/shared/MainTitle";
 import categoryStore from "./store/CategoryStore";
 import { CategoriesItems } from "./CategoriesItems/CategoriesItems";
-import "./categories.css";
+import "./Categories.css";
+import "./CategoriesMedia.css";
+
 
 export const Сategories = observer(() => {
 

@@ -1,4 +1,4 @@
-import { Button } from "../../../components/shared/Buttons/Button";
+import { CartButtons } from "./CartButtons/CartButtons";
 import { ModalDelivery } from "./ModalDelivery/ModalDelivery";
 import { ModalPay } from "./ModalPay/ModalPay";
 
@@ -9,17 +9,9 @@ export const CartTotal = ({ cart, getSumAllProduct, setIsModalDeliveryOpen, isMo
             <div className="cart__full-price">
                Full price: $ {getSumAllProduct} <span>usd</span>
             </div>
-            <Button
-               className="cart__btn-delivery button"
-               textButton="delivery"
-               action={setIsModalDeliveryOpen}
-               dataProduct={true}
-            />
-            <Button
-               className="cart__btn-pay button"
-               textButton="Pay"
-               action={setIsModalPayOpen}
-               dataProduct={true}
+            <CartButtons
+               setIsModalDeliveryOpen={setIsModalDeliveryOpen}
+               setIsModalPayOpen={setIsModalPayOpen}
             />
             <ModalDelivery
                isModalDeliveryOpen={isModalDeliveryOpen}

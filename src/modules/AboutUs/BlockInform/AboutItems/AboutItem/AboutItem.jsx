@@ -1,6 +1,6 @@
-export const DescriptionItem = ({ imageUrl, imageAlt, title, subtitle }) => {
+export const AboutItem = ({ imageUrl, imageAlt, title, subtitle }) => {
    return (
-      <div className="description__item">
+      <div className="about__item description">
          <div className="description__image">
             <img src={imageUrl} alt={imageAlt} />
          </div>

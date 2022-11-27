@@ -2,7 +2,8 @@ import { MainTitle } from '../../components/shared/MainTitle';
 import { Link } from 'react-router-dom';
 import { Button } from '../../components/shared/Buttons/Button';
 import { HomeCarousel } from './HomeCarousel/HomeCarousel';
-import "./home.css";
+import "./Home.css";
+import "./HomeMedia.css";
 
 export const Home = () => {
 

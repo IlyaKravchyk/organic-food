@@ -10,11 +10,15 @@ input::placeholder {
    margin-bottom: 80px;
 }
 
+.contact__item:nth-child(2) {
+   min-width: 370px;
+}
+
 .contact__image img {
    width: 100%;
 }
 
-.contact__container {
+.contacts__iformation {
    margin-left: 100px;
 }
 
@@ -22,12 +26,13 @@ input::placeholder {
    width: calc(50% - 15px);
 }
 
-.contact__title {
+.contact__block-title {
    color: #274C5B;
    text-transform: capitalize;
    font-weight: 700;
    font-size: 45px;
    line-height: 58px;
+   margin-bottom: 20px;
 }
 
 .contact__info {
@@ -54,7 +59,6 @@ input::placeholder {
 .form__message {
    margin-bottom: 40px;
    width: 100%;
-   min-height: 160px;
 }
 
 .form__textarea {

@@ -20,6 +20,13 @@
    cursor: pointer;
 }
 
+.product__item-wrapper {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+}
+
 .products__title {
    color: #274C5B;
    font-size: 45px;

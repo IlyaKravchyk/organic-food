@@ -8,6 +8,7 @@ export const ProductsItems = ({ hashParams, categoriesProducts, addToCart }) => 
             if (hashParams === categoriesProducts.category) {
                return (
                   <ProductsItem
+                     key={categoriesProducts.id}
                      categoriesProducts={categoriesProducts}
                      addToCart={addToCart}
                   />

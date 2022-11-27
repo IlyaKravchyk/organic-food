@@ -1,30 +1,51 @@
 import { HeaderNav } from "./HeaderNav/HeaderNav";
 import { Logo } from "../shared/Logo";
-import { HeaderCart } from "./HeaderCart/HeaderCart";
 import { useNavigate } from "react-router-dom";
-import "./header.css"
+import { HeaderBurger } from "./HeaderBurger/HeaderBurger";
+import { useState } from "react";
+import { HeaderCart } from "./HeaderCart/HeaderCart";
+import "./Header.css"
+import "./HeaderMedia.css"
 
 export const Header = () => {
    const navigate = useNavigate()
+   const [burgerActive, setBurgerActive] = useState(false)
 
-   const handleClick = () => {
+   const openClose = () => {
+      setBurgerActive(!burgerActive)
+   }
+
+   const closeMenu = () => {
+      setBurgerActive(false)
+   }
+
+   const goCart = () => {
       navigate('/cart')
    }
    return (
-      <>
-         <header className="header container">
+      <header className="header">
+         <div className="container">
             <div className="header__wrapper">
                <div className="header__items">
                   <Logo
                      className="header__item logo" />
-                  <HeaderNav />
+                  <HeaderNav
+                     burgerActive={burgerActive}
+                     closeMenu={closeMenu}
+                  />
                   <HeaderCart
-                     handleClick={handleClick}
+                     goCart={goCart}
+                     burgerActive={burgerActive}
+                     closeMenu={closeMenu}
+                  />
+                  <HeaderBurger
+                     burgerActive={burgerActive}
+                     openClose={openClose}
                   />
                </div>
             </div>
-         </header>
-      </>
+         </div>
+      </header>
    )
 
 }

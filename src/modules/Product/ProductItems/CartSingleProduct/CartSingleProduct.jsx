@@ -10,6 +10,7 @@ export const CartSingleProduct = ({ imageUrl, categoryName, promotionalPrice, pr
             categoryName={categoryName}
          />
          <CartSingleProductInfo
+            categoryName={categoryName}
             promotionalPrice={promotionalPrice}
             price={price}
             description={description}

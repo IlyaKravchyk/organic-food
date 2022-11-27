@@ -22,8 +22,8 @@ export const HomeCarousel = () => {
             pauseOnHover={true}
             pauseOnDotsHover={true}
             ref={ref}
-
-         >   <CarouselSlide imageLink="https://i.ibb.co/bWqW7kk/slide2.png" imageAlt="slide1" >
+         >
+            <CarouselSlide imageLink="https://i.ibb.co/bWqW7kk/slide2.png" imageAlt="slide1" >
                Only fresh products
             </CarouselSlide>
 
@@ -32,7 +32,7 @@ export const HomeCarousel = () => {
             </CarouselSlide>
 
             <CarouselSlide imageLink="https://i.ibb.co/GvG8Npv/slide3.png" imageAlt="slide3">
-               Only fresh products
+               Bonus system
             </CarouselSlide>
 
          </Carousel>

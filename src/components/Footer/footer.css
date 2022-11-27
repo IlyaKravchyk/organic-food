@@ -1,3 +1,7 @@
+.footer {
+   padding-bottom: 100px;
+}
+
 .footer__info,
 .footer__description,
 .footer__page {
@@ -6,10 +10,13 @@
 
 .footer__items {
    display: flex;
-   justify-content: space-between;
-   align-items: flex-start;
+   justify-content: center;
    font-size: 30px;
    line-height: 42px;
+}
+
+.footer__item.contacts {
+   width: 100%;
 }
 
 .footer__title {
@@ -17,11 +24,13 @@
    line-height: 42px;
    color: #274C5B;
    text-transform: capitalize;
+   margin-bottom: 20px;
 }
 
-.contacts {
+.footer__contacts-information {
    text-align: right;
    padding-right: 20px;
+   border-right: 1px solid #D5D5D5;
 }
 
 .contacts .footer__title {
@@ -48,6 +57,7 @@
 .icons {
    text-align: center;
    max-width: 670px;
+   padding: 0 50px;
 }
 
 .footer__logo {
@@ -55,9 +65,8 @@
 }
 
 .footer__description {
-
    color: #525C60;
-   max-width: 570px;
+   max-width: 625px;
    margin: 45px 0 50px 0;
 }
 
@@ -75,6 +84,19 @@
    height: 60px;
    background-color: #EFF6F1;
    border-radius: 50%;
+   transition: .5s;
+}
+
+.footer__icon a:hover {
+   background-color: #25c495;
+   scale: 1.05;
+   transition: .15s;
+}
+
+.footer__icon a:active {
+   background-color: #25c495;
+   scale: 0.95;
+   transition: .15s;
 }
 
 .footer__icon:not(:last-child) {
@@ -82,8 +104,9 @@
 }
 
 .utility {
-   text-align-last: left;
+   text-align: left;
    padding-left: 20px;
+   border-left: solid 1px #D5D5D5;
 }
 
 .utility .footer__title {

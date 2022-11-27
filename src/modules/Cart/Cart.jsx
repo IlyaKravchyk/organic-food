@@ -4,7 +4,8 @@ import { CartTotal } from "./CartTotal/CartTotal";
 import { useState } from "react";
 import { CartEmpty } from "./CartEmpty/CartEmpty";
 import { ProductInCart } from "./ProductInCart/ProductInCart";
-import "./cart.css"
+import "./Cart.css"
+import "./CartMedia.css"
 
 export const Cart = observer(() => {
 
@@ -19,6 +20,7 @@ export const Cart = observer(() => {
             {(cart.length !== 0) && cart.map(({ count, id, image, name, price, description }) => {
                return (
                   <ProductInCart
+                     key={id}
                      count={count}
                      id={id}
                      image={image}

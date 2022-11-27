@@ -7,6 +7,7 @@ import { ButtonBack } from "../../components/shared/Buttons/ButtonBack";
 import cartStore from "../../stores/CartStore";
 import { ProductsItems } from "./ProductsItems/ProductsItems";
 import "./ProductsCategory.css";
+import "./ProductsCategoryMedia.css";
 
 export const ProductsCategory = observer(() => {
    const { addToCart } = cartStore

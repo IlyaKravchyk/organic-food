@@ -1,0 +1,44 @@
+@media(max-width:980px) {
+   .about__welcome-subtitle {
+      text-align: left;
+   }
+
+   .about__image {
+      margin-bottom: 20px;
+   }
+
+   .about__block-inform {
+      flex-direction: column;
+   }
+
+   .about__items {
+
+      width: 100%;
+   }
+
+   .about__item {
+      padding-right: 15px;
+   }
+}
+
+@media(max-width:575px) {
+   .about__welcome {
+      margin-bottom: 10px;
+   }
+
+   .about__welcome-title {
+      font-size: 28px;
+      line-height: 42px;
+      margin-bottom: 25px;
+   }
+
+   .description__image {
+      margin-right: 25px;
+   }
+}
+
+@media(max-width:375px) {
+   .about__block-inform {
+      margin-bottom: 25px;
+   }
+}

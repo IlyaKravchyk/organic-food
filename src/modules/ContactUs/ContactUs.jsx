@@ -3,7 +3,9 @@ import { Form } from "../../components/shared/Form/Form";
 import { FormItem } from "../../components/shared/Form/FormItem";
 import { Image } from "antd";
 import { useState } from "react";
-import "./contact.css";
+import { MainTitle } from "../../components/shared/MainTitle"
+import "./Contact.css";
+import "./ContactMedia.css";
 
 export const ContactUs = () => {
 
@@ -28,10 +30,13 @@ export const ContactUs = () => {
       setMessage(event.target.value)
    }
 
-
    return (
       <div className="container">
          <div className="contact__wrapper">
+            <MainTitle
+               className="contact__title title"
+               titleText="Contactn us"
+            />
             <div className="contact__items">
                <div className="contact__item">
                   <div className="contact__image">
@@ -40,8 +45,9 @@ export const ContactUs = () => {
                </div>
                <div className="contact__item">
                   <ContactComponent
-                     classWrapper="contact__container"
-                     classTitle="contact__title"
+                     classWrapperComponents="contacts__iformation"
+                     classWrapperInfo="contact__container"
+                     classTitle="contact__block-title"
                      classInfo="contact__info"
                      classSubtitle="contact__subtitle"
                   />
@@ -84,7 +90,7 @@ export const ContactUs = () => {
                   />
                </div>
                <div className="form__message">
-                  <div className="form__name">message</div>
+                  <div className="form__name">message:</div>
                   <textarea className="form__input form__textarea" placeholder="hello there..." value={message} onChange={areaChangeHandler}></textarea>
                </div>
             </Form>
