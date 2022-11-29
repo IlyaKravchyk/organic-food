@@ -166,8 +166,7 @@
    margin-left: 25px;
 }
 
-.modal__delivery,
-.modal__pay {
+.modal {
    position: fixed;
    top: 0;
    left: 0;
@@ -183,15 +182,13 @@
    transition: .5s all;
 }
 
-.modal__delivery.active,
-.modal__pay.active {
+.modal.active {
    opacity: 1;
    transition: .5s all;
    pointer-events: all;
 }
 
-.modal__delivery-wrapper,
-.modal__pay-wrapper {
+.modal__wrapper {
    padding: 25px;
    border-radius: 20px;
    width: 50%;
@@ -201,14 +198,13 @@
    position: relative;
 }
 
-.modal__delivery-wrapper.active,
-.modal__pay-wrapper.active {
+.modal__wrapper.active,
+.modal__wrapper.active {
    scale: 1;
    transition: .5s;
 }
 
-.modal__delivery-title,
-.modal__pay-title {
+.modal__title {
    color: #274C5B;
    font-weight: 700;
    font-size: 36px;

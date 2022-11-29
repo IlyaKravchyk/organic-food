@@ -26,7 +26,7 @@ export const ContactUs = () => {
       setMessage('')
       setTimeout(() => { setIsActive(false) }, 1000)
    }
-   const areaChangeHandler = (event) => {
+   const updateTextAreaValue = (event) => {
       setMessage(event.target.value)
    }
 
@@ -91,7 +91,7 @@ export const ContactUs = () => {
                </div>
                <div className="form__message">
                   <div className="form__name">message:</div>
-                  <textarea className="form__input form__textarea" placeholder="hello there..." value={message} onChange={areaChangeHandler}></textarea>
+                  <textarea className="form__input form__textarea" placeholder="hello there..." value={message} onChange={updateTextAreaValue}></textarea>
                </div>
             </Form>
          </div>
