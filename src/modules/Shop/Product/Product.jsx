@@ -1,12 +1,11 @@
-import { ProductStore } from "./ProductStore/ProductStore";
+import { ProductStore } from "./store/ProductStore";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { observer } from "mobx-react-lite";
-import cartStore from "../../stores/CartStore";
+import cartStore from "../../../stores/CartStore";
 import { ProductItems } from "./ProductItems/ProductItems";
 import "./Product.css";
 import "./ProductMedia.css";
-
 
 export const Product = observer(() => {
 

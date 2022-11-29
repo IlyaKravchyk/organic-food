@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { HeaderBurger } from "./HeaderBurger/HeaderBurger";
 import { useState } from "react";
 import { HeaderCart } from "./HeaderCart/HeaderCart";
+import { CART } from "../../constants/constants";
 import "./Header.css"
 import "./HeaderMedia.css"
 
@@ -20,7 +21,7 @@ export const Header = () => {
    }
 
    const goCart = () => {
-      navigate('/cart')
+      navigate(`/${CART}`)
    }
    return (
       <header className="header">

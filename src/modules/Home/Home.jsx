@@ -1,6 +1,5 @@
 import { MainTitle } from '../../components/shared/MainTitle';
-import { Link } from 'react-router-dom';
-import { Button } from '../../components/shared/Buttons/Button';
+import { ButtonGoShop } from '../../components/shared/Buttons/ButtonGoShop';
 import { HomeCarousel } from './HomeCarousel/HomeCarousel';
 import "./Home.css";
 import "./HomeMedia.css";
@@ -14,12 +13,9 @@ export const Home = () => {
             titleText="Welcome to the organic food store"
          />
          <HomeCarousel />
-         <Link to="/categories">
-            <Button
-               className="home__btn-shop button"
-               textButton="go shop"
-            />
-         </Link>
+         <ButtonGoShop
+            text="go shop"
+         />
       </div>
    )
 }

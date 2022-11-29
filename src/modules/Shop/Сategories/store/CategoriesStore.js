@@ -1,6 +1,6 @@
 import { makeAutoObservable, runInAction } from "mobx";
 
-class CategoryStore {
+class CategoriesStore {
 
    categoriesData = undefined;
 
@@ -14,6 +14,6 @@ class CategoryStore {
    }
 }
 
-const categoryStore = new CategoryStore();
+const categoriesStore = new CategoriesStore();
 
-export default categoryStore
+export default categoriesStore

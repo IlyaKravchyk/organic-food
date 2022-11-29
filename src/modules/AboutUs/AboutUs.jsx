@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Button } from "../../components/shared/Buttons/Button";
+import { ButtonGoShop } from "../../components/shared/Buttons/ButtonGoShop"
 import { MainTitle } from "../../components/shared/MainTitle";
 import { BlockInform } from "./BlockInform/BlockInform";
 import { AboutWelcome } from "./AboutWelcome/AboutWelcome";
@@ -23,12 +23,9 @@ export const AboutUs = () => {
                imageUrl="https://i.ibb.co/1T9hXNb/about-Us-image.png"
                imageAlt="fruits"
             />
-            <Link to="/categories">
-               <Button
-                  className="about__btn button"
-                  textButton="shop now"
-               />
-            </Link>
+            <ButtonGoShop
+               text="shop now"
+            />
          </div>
       </div>
    )

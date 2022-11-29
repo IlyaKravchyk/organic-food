@@ -1,10 +1,10 @@
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import productsCategoryStore from "./store/ProductsCategoryStore";
-import { MainTitle } from "../../components/shared/MainTitle";
+import { MainTitle } from "../../../components/shared/MainTitle";
 import { observer } from "mobx-react-lite";
-import { ButtonBack } from "../../components/shared/Buttons/ButtonBack";
-import cartStore from "../../stores/CartStore";
+import { ButtonBack } from "../../../components/shared/Buttons/ButtonBack";
+import cartStore from "../../../stores/CartStore";
 import { ProductsItems } from "./ProductsItems/ProductsItems";
 import "./ProductsCategory.css";
 import "./ProductsCategoryMedia.css";

@@ -1,6 +1,6 @@
-import { Button } from "../../../../../components/shared/Buttons/Button";
-import { MainTitle } from "../../../../../components/shared/MainTitle";
-import { ButtonBack } from "../../../../../components/shared/Buttons/ButtonBack";
+import { Button } from "../../../../../../components/shared/Buttons/Button";
+import { MainTitle } from "../../../../../../components/shared/MainTitle";
+import { ButtonBack } from "../../../../../../components/shared/Buttons/ButtonBack";
 
 export const CartSingleProductInfo = ({ categoryName, promotionalPrice, price, description, addToCart, productData }) => {
    return (

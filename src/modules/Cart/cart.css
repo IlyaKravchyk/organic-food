@@ -4,6 +4,10 @@
    align-items: center;
 }
 
+.button__shop.button {
+   margin-top: 50px;
+}
+
 .cart__item {
    display: flex;
    align-items: center;
@@ -12,8 +16,6 @@
    justify-content: start;
    padding: 0 20px 0 0;
 }
-
-
 
 .cart__item:last-child {
    justify-content: space-between;
@@ -137,7 +139,6 @@
 .cart__empty-btn.button {
    margin-top: 40px;
 }
-
 
 .cart__total {
    display: flex;

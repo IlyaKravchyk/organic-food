@@ -1,4 +1,4 @@
-import { Button } from "../../../../components/shared/Buttons/Button";
+import { Button } from "../../../../../components/shared/Buttons/Button";
 import { Link } from "react-router-dom";
 
 export const ProductsItem = ({ categoriesProducts, addToCart }) => {
@@ -16,7 +16,7 @@ export const ProductsItem = ({ categoriesProducts, addToCart }) => {
          </div>
          <Button
             className="products__button-add button"
-            textButton=" add to cart"
+            textButton="add to cart"
             action={addToCart}
             dataProduct={categoriesProducts}
          />
