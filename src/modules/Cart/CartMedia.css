@@ -99,11 +99,6 @@
       align-items: center;
    }
 
-   .modal__delivery-wrapper,
-   .modal__pay-wrapper {
-      width: 65%;
-   }
-
    .cart__total .form__input {
       padding: 10px 0 10px 20px;
    }
@@ -144,10 +139,5 @@
 @media(max-width:425px) {
    .cart__cart-price {
       margin: 0 10px;
-   }
-
-   .modal__delivery-wrapper,
-   .modal__pay-wrapper {
-      width: 80%;
    }
 }

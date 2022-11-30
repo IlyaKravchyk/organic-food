@@ -5,7 +5,7 @@ import { HeaderBurger } from "./HeaderBurger/HeaderBurger";
 import { useState } from "react";
 import { HeaderCart } from "./HeaderCart/HeaderCart";
 import { CART } from "../../constants/constants";
-import "./Header.css"
+import "./header.css"
 import "./HeaderMedia.css"
 
 export const Header = () => {

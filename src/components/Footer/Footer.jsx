@@ -1,7 +1,7 @@
 import { ContactComponent } from "../ContactUs/ContactComponent";
 import { FooterLogos } from "./FooterLogos/FooterLogos";
 import { FooterUtility } from "./FooterUtility/FooterUtility";
-import "./Footer.css";
+import "./footer.css";
 import "./FooterMedia.css";
 
 export const Footer = () => {

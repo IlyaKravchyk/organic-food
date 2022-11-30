@@ -12,10 +12,20 @@
    }
 }
 
+@media(max-width:635px) {
+   .modal__wrapper {
+      width: 65%;
+   }
+}
+
 @media(max-width:425px) {
    .main .title {
       font-size: 42px;
       padding: 0px 0 25px 0;
+   }
+
+   .modal__wrapper {
+      width: 80%;
    }
 
    .ant-image-preview-img {

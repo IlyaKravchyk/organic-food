@@ -1,7 +1,7 @@
 import { MainTitle } from '../../components/shared/MainTitle';
 import { ButtonGoShop } from '../../components/shared/Buttons/ButtonGoShop';
 import { HomeCarousel } from './HomeCarousel/HomeCarousel';
-import "./Home.css";
+import "./home.css";
 import "./HomeMedia.css";
 
 export const Home = () => {

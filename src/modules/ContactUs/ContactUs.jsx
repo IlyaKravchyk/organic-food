@@ -4,7 +4,7 @@ import { FormItem } from "../../components/shared/Form/FormItem";
 import { Image } from "antd";
 import { useState } from "react";
 import { MainTitle } from "../../components/shared/MainTitle"
-import "./Contact.css";
+import "./contact.css";
 import "./ContactMedia.css";
 
 export const ContactUs = () => {

@@ -166,43 +166,7 @@
    margin-left: 25px;
 }
 
-.modal {
-   position: fixed;
-   top: 0;
-   left: 0;
-   width: 100vw;
-   height: 100vh;
-   background-color: rgba(0, 0, 0, 0.5);
-   display: none;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   opacity: 0;
-   pointer-events: none;
-   transition: .5s all;
-}
 
-.modal.active {
-   opacity: 1;
-   transition: .5s all;
-   pointer-events: all;
-}
-
-.modal__wrapper {
-   padding: 25px;
-   border-radius: 20px;
-   width: 50%;
-   background-color: #fff;
-   scale: 0;
-   transition: .4s;
-   position: relative;
-}
-
-.modal__wrapper.active,
-.modal__wrapper.active {
-   scale: 1;
-   transition: .5s;
-}
 
 .modal__title {
    color: #274C5B;

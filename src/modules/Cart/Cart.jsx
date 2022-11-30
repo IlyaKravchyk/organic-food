@@ -4,7 +4,7 @@ import { CartTotal } from "./CartTotal/CartTotal";
 import { useState } from "react";
 import { CartEmpty } from "./CartEmpty/CartEmpty";
 import { ProductInCart } from "./ProductInCart/ProductInCart";
-import "./Cart.css"
+import "./cart.css"
 import "./CartMedia.css"
 
 export const Cart = observer(() => {
