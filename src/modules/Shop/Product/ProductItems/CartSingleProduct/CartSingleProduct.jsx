@@ -1,6 +1,5 @@
-import { CartSingleProductImage } from "./CartSingleProductImage/CartSingleProductImage";
-import { CartSingleProductInfo } from "./CartSingleProductInfo/CartSingleProductInfo";
-
+import { CartSingleProductImage } from "./CartSingleProductImage";
+import { CartSingleProductInfo } from "./CartSingleProductInfo";
 
 export const CartSingleProduct = ({ imageUrl, categoryName, promotionalPrice, price, description, productData, addToCart }) => {
    return (

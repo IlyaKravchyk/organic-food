@@ -1,16 +1,17 @@
 import { Link } from "react-router-dom";
+import style from "./CategoriesItems.module.scss"
 
 export const CategoriesItems = ({ categoriesData }) => {
    return (
-      <div className="categories__items">
+      <div className={style.items}>
          {!categoriesData && <div className="loader"></div>}
          {categoriesData && categoriesData.map(({ id, category, image }) => {
             return (
-               <div className="categories__item" key={id}>
-                  <div className="categories__image">
+               <div className={style.item} key={id}>
+                  <div className={style.image}>
                      <Link to={category} >
                         <img src={image} alt={category} />
-                        <span className="categories__name">{category}</span>
+                        <span className={style.nameCategory}>{category}</span>
                      </Link>
                   </div>
                </div>

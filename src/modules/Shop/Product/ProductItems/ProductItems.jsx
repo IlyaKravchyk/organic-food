@@ -1,9 +1,9 @@
-
-import { CartSingleProduct } from "./CartSingleProduct/CartSingleProduct";
+import { CartSingleProduct } from "./CartSingleProduct";
+import style from "./ProductItems.module.scss"
 
 export const ProductItems = ({ isLoading, imageUrl, categoryName, promotionalPrice, price, description, productData, addToCart }) => {
    return (
-      <div className="product__items">
+      <div className={style.items}>
          {isLoading && <div className="loader"></div>}
          {!isLoading &&
             <CartSingleProduct

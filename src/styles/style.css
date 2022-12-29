@@ -31,9 +31,12 @@ h2 {
    padding: 0;
 }
 
-input:focus,
-textarea:focus {
+input:focus {
    border: 2px solid #30bdf0;
+}
+
+input::placeholder {
+   text-transform: capitalize;
 }
 
 .ant-image-preview-img {
@@ -41,7 +44,7 @@ textarea:focus {
 }
 
 .container {
-   max-width: 1380px;
+   max-width: 1280px;
    width: 85%;
    margin: 0 auto;
 }
@@ -52,61 +55,17 @@ textarea:focus {
    min-height: 100%;
 }
 
-
 .main {
    flex: 1 1 auto;
    padding-bottom: 80px;
 }
 
-.main .title {
-   color: #274C5B;
-   font-size: 45px;
-   line-height: 58px;
-   font-weight: 700;
-   text-transform: capitalize;
-   text-align: center;
-   padding: 15px 0 50px 0;
+.slick-slider {
+   height: 100%;
 }
 
 .logo {
    max-width: 200px;
-}
-
-.modal {
-   position: fixed;
-   top: 0;
-   left: 0;
-   width: 100vw;
-   height: 100vh;
-   background-color: rgba(0, 0, 0, 0.5);
-   display: none;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   opacity: 0;
-   pointer-events: none;
-   transition: .5s all;
-}
-
-.modal.active {
-   opacity: 1;
-   transition: .5s all;
-   pointer-events: all;
-}
-
-.modal__wrapper {
-   padding: 25px;
-   border-radius: 20px;
-   width: 50%;
-   background-color: #fff;
-   scale: 0;
-   transition: .4s;
-   position: relative;
-}
-
-.modal__wrapper.active {
-   scale: 1;
-   transition: .5s;
 }
 
 .button {
@@ -165,24 +124,7 @@ textarea:focus {
    align-items: center;
 }
 
-.form__items {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
-   align-items: center;
-   width: 100%;
-}
 
-.form__item {
-   width: 100%;
-   margin-bottom: 30px;
-}
-
-.form__name {
-   color: #274C5B;
-   font-weight: 700;
-   text-transform: capitalize;
-}
 
 .loader {
    font-size: 10px;

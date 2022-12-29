@@ -1,17 +1,14 @@
-import { Link } from "react-router-dom";
 import { ButtonGoShop } from "../../components/shared/Buttons/ButtonGoShop"
 import { MainTitle } from "../../components/shared/MainTitle";
-import { BlockInform } from "./BlockInform/BlockInform";
-import { AboutWelcome } from "./AboutWelcome/AboutWelcome";
-import "./AboutUs.css";
-import "./AboutUsMedia.css"
+import { BlockInform } from "./BlockInform";
+import { AboutWelcome } from "./AboutWelcome";
+import style from "./AboutUs.module.scss";
 
 export const AboutUs = () => {
    return (
       <div className="container">
-         <div className="about__wrapper">
+         <div className={style.wrapper}>
             <MainTitle
-               className="about__title title"
                titleText="about us"
             />
             <AboutWelcome

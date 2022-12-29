@@ -1,11 +1,12 @@
 import cartStore from "../../stores/CartStore";
 import { observer } from "mobx-react-lite";
-import { CartTotal } from "./CartTotal/CartTotal";
+import { CartTotal } from "./CartTotal";
 import { useState } from "react";
-import { CartEmpty } from "./CartEmpty/CartEmpty";
-import { ProductInCart } from "./ProductInCart/ProductInCart";
-import "./cart.css"
-import "./CartMedia.css"
+import { CartEmpty } from "./CartEmpty";
+import { ProductInCart } from "./ProductInCart";
+import "./cart.css";
+import "./CartMedia.css";
+import style from "./Cart.module.scss";
 
 export const Cart = observer(() => {
 
@@ -15,7 +16,7 @@ export const Cart = observer(() => {
 
    return (
       <div className="container">
-         <div className="cart__container">
+         <div className={style.cart}>
             {!cart.length && <CartEmpty text="Cart is empty." />}
             {(cart.length !== 0) && cart.map(({ count, id, image, name, price, description }) => {
                return (

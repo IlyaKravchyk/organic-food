@@ -1,12 +1,14 @@
+import style from "./HeaderBurger.module.scss"
+
 export const HeaderBurger = ({ openClose, burgerActive }) => {
    const clickHandler = () => {
       openClose()
    }
    return (
-      <div className={burgerActive ? "header__burger active" : "header__burger"} onClick={clickHandler}>
-         <span className={burgerActive ? "burger__line active" : "burger__line"}></span>
-         <span className={burgerActive ? "burger__line active" : "burger__line"}></span>
-         <span className={burgerActive ? "burger__line active" : "burger__line"}></span>
+      <div className={burgerActive ? `${style.burger} ${style.active}` : style.burger} onClick={clickHandler} >
+         <span className={burgerActive ? `${style.line} ${style.active}` : style.line}></span>
+         <span className={burgerActive ? `${style.line} ${style.active}` : style.line}></span>
+         <span className={burgerActive ? `${style.line} ${style.active}` : style.line}></span>
       </div >
    )
 }

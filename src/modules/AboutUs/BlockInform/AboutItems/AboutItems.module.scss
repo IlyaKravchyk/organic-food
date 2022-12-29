@@ -1,0 +1,8 @@
+.items {
+   width: calc(50% - 30px);
+   max-width: 600px;
+
+   @media (max-width: 980px) {
+      width: 100%;
+   }
+}

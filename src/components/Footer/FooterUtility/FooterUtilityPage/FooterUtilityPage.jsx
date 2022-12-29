@@ -1,9 +1,10 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
+import style from "./FooterUtilityPage.module.scss";
 
 export const FooterUtilityPage = ({ text, linkPage }) => {
    return (
-      <div className="footer__page">
-         <Link className="footer__link" href={linkPage}>{text}</Link>
+      <div className={style.page}>
+         <Link className={style.link} href={linkPage}>{text}</Link>
       </div>
    )
 }

@@ -1,0 +1,31 @@
+.info {
+   a {
+      color: #525C60;
+   }
+
+   .subtitle {
+      color: #525C60;
+      font-size: 22px;
+      line-height: 23px;
+      font-weight: 700;
+      text-transform: capitalize;
+      margin-bottom: 10px;
+   }
+
+   @media(max-width:765px) {
+      padding: 0 10px;
+   }
+
+   @media(max-width:600px) {
+      text-align: left;
+      padding: 0;
+   }
+}
+
+.info:not(:last-child) {
+   margin-bottom: 40px;
+
+   @media(max-width:900px) {
+      margin-bottom: 10px;
+   }
+}

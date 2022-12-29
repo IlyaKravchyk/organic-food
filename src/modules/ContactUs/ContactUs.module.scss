@@ -1,0 +1,142 @@
+.contact {
+
+   input::placeholder,
+   .textarea::placeholder {
+      color: #BDBDBD;
+      text-transform: capitalize;
+   }
+
+   .items {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 80px;
+
+      .item {
+         .item:nth-child(2) {
+            min-width: 370px;
+
+            @media(max-width: 960px) {
+               min-width: 0px;
+            }
+         }
+
+         @media(max-width: 960px) {
+            width: 100%;
+         }
+      }
+
+      @media(max-width: 960px) {
+         flex-direction: column;
+         text-align: center;
+         margin-bottom: 30px;
+      }
+
+      .image {
+         img {
+            width: 100%;
+         }
+
+         @media(max-width: 960px) {
+            margin-bottom: 30px;
+         }
+      }
+   }
+
+   .wrapper {
+      margin-left: 100px;
+
+      @media(max-width: 960px) {
+         margin: 0;
+      }
+
+      .title {
+         color: #274C5B;
+         text-transform: capitalize;
+         font-weight: 700;
+         font-size: 45px;
+         line-height: 58px;
+         margin-bottom: 20px;
+
+         @media(max-width: 960px) {
+            text-align: center;
+            font-size: 34px
+         }
+
+         @media(max-width: 628px) {
+            text-align: left;
+         }
+      }
+
+      .info {
+         @media(max-width: 960px) {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-around;
+            text-align: center;
+         }
+
+         @media(max-width: 628px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            text-align-last: left;
+         }
+      }
+   }
+
+   .formWrapper {
+      width: calc(50% - 15px);
+
+      @media(max-width: 628px) {
+         width: 100%;
+      }
+   }
+
+   .formChildren {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+
+      @media(max-width: 628px) {
+         flex-direction: column;
+         margin-bottom: 20px;
+      }
+   }
+
+   .textarea {
+      display: block;
+      width: 100%;
+      min-height: 160px;
+      outline: none;
+      border: 2px solid #274C5B;
+      border-radius: 16px;
+      padding: 15px 0 0 40px;
+      resize: none;
+
+
+
+      @media(max-width: 768px) {
+         padding-left: 30px;
+         min-height: 130px;
+      }
+   }
+
+   .textarea:focus {
+      border: 2px solid #30bdf0;
+   }
+
+   .message {
+      margin-bottom: 40px;
+      width: 100%;
+   }
+
+   .formName {
+      color: #274C5B;
+      font-weight: 700;
+      text-transform: capitalize;
+   }
+}

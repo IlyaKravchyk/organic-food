@@ -3,9 +3,6 @@ import { useEffect } from "react";
 import { MainTitle } from "../../../components/shared/MainTitle";
 import categoriesStore from "./store/CategoriesStore";
 import { CategoriesItems } from "./CategoriesItems/CategoriesItems";
-import "./Categories.css";
-import "./CategoriesMedia.css";
-
 
 export const Сategories = observer(() => {
 
@@ -17,9 +14,8 @@ export const Сategories = observer(() => {
 
    return (
       <div className="container">
-         <div className="categories__wrapper">
+         <div className={"categories"}>
             <MainTitle
-               className="categories__title title"
                titleText="categories"
             />
             <CategoriesItems

@@ -5,9 +5,8 @@ import { MainTitle } from "../../../components/shared/MainTitle";
 import { observer } from "mobx-react-lite";
 import { ButtonBack } from "../../../components/shared/Buttons/ButtonBack";
 import cartStore from "../../../stores/CartStore";
-import { ProductsItems } from "./ProductsItems/ProductsItems";
-import "./ProductsCategory.css";
-import "./ProductsCategoryMedia.css";
+import { ProductsItems } from "./ProductsItems";
+import style from "./ProductsCategory.module.scss"
 
 export const ProductsCategory = observer(() => {
    const { addToCart } = cartStore
@@ -20,9 +19,8 @@ export const ProductsCategory = observer(() => {
 
    return (
       <div className="container">
-         <div className="products__wrapper">
+         <div className={style.products}>
             <MainTitle
-               className="product__title"
                titleText={products}
             />
             <ProductsItems
@@ -32,7 +30,6 @@ export const ProductsCategory = observer(() => {
             />
             <ButtonBack
                className="products__button-back button-back"
-               text="go to back"
             />
          </div >
       </div>

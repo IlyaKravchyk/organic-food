@@ -1,4 +1,5 @@
-import { NavLink } from "react-router-dom"
+import { NavLink } from "react-router-dom";
+import style from "./NavItem.module.scss"
 
 export const NavItem = ({ link, children, closeMenu }) => {
 
@@ -7,8 +8,8 @@ export const NavItem = ({ link, children, closeMenu }) => {
    }
 
    return (
-      <li className="nav__item" onClick={clickHandler}>
-         <NavLink className="nav__link" to={link}>
+      <li className={style.item} onClick={clickHandler}>
+         <NavLink className={({ isActive }) => isActive ? `${style.link} ${style.active}` : style.link} to={link}>
             {children}
          </NavLink >
       </li >

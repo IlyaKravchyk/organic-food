@@ -1,12 +1,13 @@
 import { Button } from "../../../components/shared/Buttons/Button";
-import { CartCount } from "./CartCount/CartCount";
-import { ProductCart } from "./ProductCart/ProductCart";
+import { CartCount } from "./CartCount";
+import { ProductCart } from "./ProductCart";
+import style from "./ProductInCart.module.scss"
 
 export const ProductInCart = ({ count, id, image, name, price, description, countUp, countDown, deteletedProduct }) => {
    return (
-      <div className="cart__carts" key={id}>
-         <div className="cart__cart">
-            <div className="cart__item">
+      <div className={style.carts} key={id}>
+         <div className={style.cart}>
+            <div className={style.item}>
                <ProductCart
                   imageUtl={image}
                   title={name}
@@ -14,18 +15,18 @@ export const ProductInCart = ({ count, id, image, name, price, description, coun
                   price={price}
                />
             </div>
-            <div className="cart__item">
+            <div className={style.item}>
                <CartCount
                   productId={id}
                   countUp={countUp}
                   countDown={countDown}
                   count={count}
                />
-               <div className="cart__cart-price">
+               <div className={style.price}>
                   $ {(count * price).toFixed(2)} usd
                </div>
                <Button
-                  className="cart__delete-btn"
+                  className={style.button}
                   textButton={<i className="fa fa-trash-o" aria-hidden="true"></i>}
                   action={deteletedProduct}
                   dataProduct={id}

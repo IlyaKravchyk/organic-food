@@ -1,11 +1,13 @@
+import style from "./AboutWelcome.module.scss"
+
 export const AboutWelcome = ({ title, subtitle }) => {
    return (
 
-      <div className="about__welcome">
-         <div className="about__welcome-title">
+      <div className={style.welcome}>
+         <div className={style.title}>
             {title}
          </div>
-         <div className="about__welcome-subtitle">
+         <div className={style.subtitle}>
             {subtitle}
          </div>
       </div>

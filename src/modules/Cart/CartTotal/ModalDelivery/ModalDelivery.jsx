@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Form } from "../../../../components/shared/Form/Form";
-import { FormItem } from "../../../../components/shared/Form/FormItem";
+import { Form } from "../../../../components/shared/Form/Form/Form";
+import { FormItem } from "../../../../components/shared/Form/FormItem/FormItem";
 import { Modal } from "../../../../components/shared/Modal/Modal";
 
 export const ModalDelivery = ({ isModalDeliveryOpen, setIsModalDeliveryOpen }) => {
@@ -21,7 +21,6 @@ export const ModalDelivery = ({ isModalDeliveryOpen, setIsModalDeliveryOpen }) =
       <Modal className="modal__delivery" state={isModalDeliveryOpen} setState={setIsModalDeliveryOpen}>
          <h2 className="modal__title"> Contact details </h2>
          <Form buttonName="confirm" sumbitHandler={clearAndClose}>
-
             <FormItem
                type="text"
                value={name}

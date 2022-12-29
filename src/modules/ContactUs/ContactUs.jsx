@@ -4,8 +4,8 @@ import { FormItem } from "../../components/shared/Form/FormItem";
 import { Image } from "antd";
 import { useState } from "react";
 import { MainTitle } from "../../components/shared/MainTitle"
-import "./contact.css";
-import "./ContactMedia.css";
+import style from "./ContactUs.module.scss"
+import { ContactsData } from "../../components/ContactsData/ContactsData";
 
 export const ContactUs = () => {
 
@@ -32,31 +32,29 @@ export const ContactUs = () => {
 
    return (
       <div className="container">
-         <div className="contact__wrapper">
+         <div className={style.contact}>
             <MainTitle
-               className="contact__title title"
                titleText="Contactn us"
             />
-            <div className="contact__items">
-               <div className="contact__item">
-                  <div className="contact__image">
+            <div className={style.items}>
+               <div className={style.item}>
+                  <div className={style.image}>
                      <Image src="https://i.ibb.co/cx7BKM1/contact-image.png" alt="image" />
                   </div>
                </div>
-               <div className="contact__item">
-                  <ContactComponent
-                     classWrapperComponents="contacts__iformation"
-                     classWrapperInfo="contact__container"
-                     classTitle="contact__block-title"
-                     classInfo="contact__info"
-                     classSubtitle="contact__subtitle"
+               <div className={style.item}>
+                  <ContactsData
+                     wrapper={style.wrapper}
+                     title={style.title}
+                     item={style.info}
                   />
                </div>
             </div>
 
-            <Form buttonName="send" sumbitHandler={clearForm} isActive={isActive} >
-               <div className="contact__form-wrapper">
+            <Form buttonName="send" classForm={style.formChildren} sumbitHandler={clearForm} isActive={isActive} >
+               <div className={style.formWrapper}>
                   <FormItem
+                     classForm="formItems"
                      type="text"
                      placeholder="your name"
                      value={name}
@@ -72,7 +70,7 @@ export const ContactUs = () => {
                      text="adrdress:"
                   />
                </div>
-               <div className="contact__form-wrapper">
+               <div className={style.formWrapper}>
                   <FormItem
                      type="text"
                      placeholder="our company name"
@@ -89,9 +87,14 @@ export const ContactUs = () => {
                      text="subject:"
                   />
                </div>
-               <div className="form__message">
-                  <div className="form__name">message:</div>
-                  <textarea className="form__input form__textarea" placeholder="hello there..." value={message} onChange={updateTextAreaValue}></textarea>
+               <div className={style.message}>
+                  <div className={style.formName}>message:</div>
+                  <textarea
+                     className={style.textarea}
+                     placeholder="Write to us ..."
+                     value={message}
+                     onChange={updateTextAreaValue}>
+                  </textarea>
                </div>
             </Form>
          </div>

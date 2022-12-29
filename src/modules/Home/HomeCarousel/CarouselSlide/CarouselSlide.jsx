@@ -1,10 +1,12 @@
+import style from "./CarouselSlide.module.scss"
+
 export const CarouselSlide = ({ imageLink, imageAlt, children }) => {
    return (
-      <div className='home__slider'>
-         <div className='home__slider-image'>
+      <div className={style.slider}>
+         <div className={style.image}>
             <img src={imageLink} alt={imageAlt} />
          </div>
-         <span className='home__slide-description'>{children}</span>
+         <span className={style.description}>{children}</span>
       </div>
    )
 }

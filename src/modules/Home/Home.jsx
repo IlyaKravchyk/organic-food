@@ -1,15 +1,13 @@
 import { MainTitle } from '../../components/shared/MainTitle';
 import { ButtonGoShop } from '../../components/shared/Buttons/ButtonGoShop';
-import { HomeCarousel } from './HomeCarousel/HomeCarousel';
-import "./home.css";
-import "./HomeMedia.css";
+import { HomeCarousel } from './HomeCarousel';
+import style from "./Home.module.scss";
 
 export const Home = () => {
 
    return (
-      <div className='home__wrapper'>
+      <div className={style.home}>
          <MainTitle
-            className="home__title title"
             titleText="Welcome to the organic food store"
          />
          <HomeCarousel />

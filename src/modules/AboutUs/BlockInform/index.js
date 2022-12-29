@@ -1,0 +1,1 @@
+export { BlockInform } from "./BlockInform"

@@ -1,0 +1,24 @@
+.inform {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 50px;
+
+   @media(max-width:980px) {
+      flex-direction: column;
+   }
+
+   @media(max-width:375px) {
+      margin-bottom: 25px;
+   }
+
+   .image {
+      img {
+         width: 100%;
+      }
+
+      @media(max-width:980px) {
+         margin-bottom: 20px;
+      }
+   }
+}

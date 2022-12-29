@@ -1,9 +1,10 @@
-import { NavItem } from "./NavItem/NavItem";
+import { NavItem } from "./NavItem";
+import style from "./HeaderNav.module.scss"
 
 export const HeaderNav = ({ burgerActive, closeMenu }) => {
    return (
-      <nav className={burgerActive ? "header__nav active" : "header__nav"}>
-         <ul className="nav__items">
+      <nav className={burgerActive ? `${style.nav} ${style.active}` : style.nav}>
+         <ul className={style.item}>
             <NavItem
                link="/" children="Home"
                closeMenu={closeMenu}

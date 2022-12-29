@@ -1,19 +1,20 @@
 import { Image } from 'antd';
+import style from "./ProductCart.module.scss";
 
 export const ProductCart = ({ imageUtl, title, description, price }) => {
    return (
       <>
-         <div className="cart__image">
-            <Image className="cart__ant-image" src={imageUtl} alt={title} />
+         <div className={style.image}>
+            <Image className={style.antImage} src={imageUtl} alt={title} />
          </div>
-         <div className="cart__wrap">
-            <div className="cart__title">
+         <div className={style.wrapper}>
+            <div className={style.title}>
                {title}
             </div>
-            <div className="cart__description">
+            <div className={style.description}>
                {description}
             </div>
-            <div className="cart__price">
+            <div className={style.price}>
                $ {price} usd
             </div>
          </div>

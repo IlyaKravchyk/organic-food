@@ -1,5 +1,7 @@
-export const MainTitle = ({ className, titleText }) => {
+import style from "./MainTitle.module.scss"
+
+export const MainTitle = ({ titleText }) => {
    return (
-      <h1 className={className}>{titleText}</h1>
+      <h1 className={style.title}>{titleText}</h1>
    )
-}
+}   

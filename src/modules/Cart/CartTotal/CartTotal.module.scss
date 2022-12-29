@@ -1,0 +1,28 @@
+.total {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   @media(max-width:635px) {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .fullPrice {
+      font-size: 20px;
+      color: #274C5B;
+      font-weight: 700;
+      text-transform: capitalize;
+      max-width: 220px;
+      width: 100%;
+      margin-right: 50px;
+
+      span {
+         text-transform: uppercase;
+      }
+
+      @media(max-width:635px) {
+         margin: 0 auto 20px auto;
+      }
+   }
+}

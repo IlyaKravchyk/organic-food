@@ -1,15 +1,18 @@
 import { Logo } from '../../shared/Logo';
-import { FooterLogosIcon } from './FooterLogosIcon/FooterLogosIcon';
+import { FooterLogosIcon } from './FooterLogosIcon';
+import style from "./FooterLogos.module.scss";
 
 
 export const FooterLogos = () => {
    return (
-      <div className="footer__item icons">
-         <Logo className="footer__logo logo" />
-         <p className="footer__description">
+      <div className={style.items}>
+         <div className={style.logo}>
+            <Logo />
+         </div>
+         <p className={style.description}>
             We are a popular and farming company aspiring to be a leader in the Organic food industry.
          </p>
-         <div className="footer__icons">
+         <div className={style.icons}>
             <FooterLogosIcon
                linkPage="https://ru-ru.facebook.com/"
                linkImage="https://i.ibb.co/6gThLmG/IMAGE.png"

@@ -1,18 +1,19 @@
 import { Button } from "../../../../components/shared/Buttons/Button"
+import style from "./CartCount.module.scss"
 
 export const CartCount = ({ count, countUp, countDown, productId }) => {
 
    return (
-      <div className="cart__cart-count">
+      <div className={style.count}>
          <Button
-            className="cart__count-down"
+            className={style.countDown}
             textButton={<i className="fa fa-minus" aria-hidden="true"></i>}
             action={countDown}
             dataProduct={productId}
          />
-         <span className="cart__cart-count-number">{count}</span>
+         <span className={style.number}>{count}</span>
          <Button
-            className="cart__count-up"
+            className={style.countUp}
             textButton={<i className="fa fa-plus" aria-hidden="true"></i>}
             action={countUp}
             dataProduct={productId}

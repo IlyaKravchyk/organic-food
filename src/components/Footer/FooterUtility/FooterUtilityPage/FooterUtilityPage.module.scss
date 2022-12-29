@@ -1,0 +1,16 @@
+.page {
+   text-transform: capitalize;
+
+   .link {
+      color: #525C60;
+   }
+}
+
+
+.page:not(:last-child) {
+   margin-bottom: 25px;
+
+   @media(max-width:900px) {
+      margin-bottom: 10px;
+   }
+}

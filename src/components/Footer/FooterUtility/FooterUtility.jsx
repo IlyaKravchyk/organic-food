@@ -1,10 +1,11 @@
-import { FooterUtilityPage } from "./FooterUtilityPage/FooterUtilityPage"
+import { FooterUtilityPage } from "./FooterUtilityPage";
+import style from "./FooterUtility.module.scss"
 
 export const FooterUtility = () => {
    return (
-      <div className="footer__item utility">
-         <h2 className="footer__title ">utility pages</h2>
-         <div className="footer__pages">
+      <div className={style.utility}>
+         <h2 className={style.title}>utility pages</h2>
+         <div className={style.pages}>
             <FooterUtilityPage
                linkPage="#"
                text="style guide"
@@ -14,7 +15,6 @@ export const FooterUtility = () => {
                linkPage="#"
                text="protected"
             />
-
 
             <FooterUtilityPage
                linkPage="#"

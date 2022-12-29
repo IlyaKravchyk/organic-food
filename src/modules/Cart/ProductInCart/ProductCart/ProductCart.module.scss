@@ -1,0 +1,48 @@
+.image {
+   max-width: 200px;
+
+   @media(max-width:635px) {
+      margin-bottom: 20px;
+      max-width: 265px;
+   }
+
+   .antImage {
+      width: 100%;
+   }
+
+}
+
+.wrapper {
+   padding-left: 20px;
+   display: flex;
+   flex-direction: column;
+
+   @media(max-width:635px) {
+      padding: 0;
+   }
+
+   .title {
+      color: #274C5B;
+      font-weight: 700;
+      font-size: 32px;
+      text-transform: capitalize;
+   }
+
+   .description {
+      max-width: 400px;
+      line-height: 26px;
+      margin: 10px 0;
+
+      @media(max-width:1024px) {
+         max-width: 300px;
+         line-height: 26px;
+      }
+   }
+
+   .price {
+      font-size: 20px;
+      color: #274C5B;
+      font-weight: 700;
+      text-transform: uppercase;
+   }
+}

@@ -1,9 +1,10 @@
-import { AboutItem } from "./AboutItem/AboutItem";
+import { AboutItem } from "./AboutItem";
+import style from "./AboutItems.module.scss"
 
 export const AboutItems = () => {
    return (
 
-      <div className="about__items">
+      <div className={style.items}>
          <AboutItem
             imageUrl="https://i.ibb.co/N34Pb16/about-Us-image3.png"
             imageAlt="only organic foods"

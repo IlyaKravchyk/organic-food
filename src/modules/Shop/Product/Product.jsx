@@ -1,11 +1,10 @@
+import { ProductItems } from "./ProductItems";
 import { ProductStore } from "./store/ProductStore";
+import cartStore from "../../../stores/CartStore";
+import { observer } from "mobx-react-lite";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { observer } from "mobx-react-lite";
-import cartStore from "../../../stores/CartStore";
-import { ProductItems } from "./ProductItems/ProductItems";
-import "./Product.css";
-import "./ProductMedia.css";
+import style from "./Product.module.scss"
 
 export const Product = observer(() => {
 
@@ -21,7 +20,7 @@ export const Product = observer(() => {
 
    return (
       <div className="container">
-         <div className="product__wrapper">
+         <div className={style.product}>
             <ProductItems
                isLoading={isLoading}
                imageUrl={image}

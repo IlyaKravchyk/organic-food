@@ -1,0 +1,1 @@
+export { Сategories } from "./Сategories"

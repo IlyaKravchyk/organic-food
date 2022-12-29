@@ -1,0 +1,78 @@
+.carousel {
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   margin: 0 auto;
+   position: relative;
+   z-index: 1;
+   margin-bottom: 60px;
+
+   @media(max-width:768px) {
+      margin-bottom: 30px;
+   }
+
+   @media(max-width:425px) {
+      margin-bottom: 20px;
+   }
+
+   .btnBack,
+   .btnNext {
+      font-size: 30px;
+      color: #fff;
+      width: 100%;
+      height: 100%;
+      background-color: #3D8B5B;
+      border-radius: 50%;
+      border: 0 solid transparent;
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: .3s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 4px;
+
+      @media(max-width:425px) {
+         font-size: 26px;
+         width: 30px;
+         height: 30px;
+         padding-bottom: 2px;
+      }
+   }
+
+   .btnBack {
+      left: 10%;
+      padding-right: 3px;
+
+      @media(max-width:425px) {
+         left: 5%;
+      }
+   }
+
+   .btnNext {
+      right: 10%;
+      padding-left: 3px;
+
+      @media(max-width:425px) {
+         right: 5%;
+      }
+   }
+
+
+   .btnNext:hover,
+   .btnBack:hover {
+      scale: 1.1;
+      transition: .3s;
+   }
+
+   .btnNext:active,
+   .btnBack:active {
+      scale: 0.9;
+      transition: .1s;
+   }
+
+}

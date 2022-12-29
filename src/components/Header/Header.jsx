@@ -1,12 +1,11 @@
-import { HeaderNav } from "./HeaderNav/HeaderNav";
+import { HeaderNav } from "./HeaderNav";
 import { Logo } from "../shared/Logo";
 import { useNavigate } from "react-router-dom";
 import { HeaderBurger } from "./HeaderBurger/HeaderBurger";
 import { useState } from "react";
-import { HeaderCart } from "./HeaderCart/HeaderCart";
+import { HeaderCart } from "./HeaderCart";
 import { CART } from "../../constants/constants";
-import "./header.css"
-import "./HeaderMedia.css"
+import style from "./Header.module.scss"
 
 export const Header = () => {
    const navigate = useNavigate()
@@ -24,12 +23,13 @@ export const Header = () => {
       navigate(`/${CART}`)
    }
    return (
-      <header className="header">
+      <header className={style.header}>
          <div className="container">
-            <div className="header__wrapper">
-               <div className="header__items">
-                  <Logo
-                     className="header__item logo" />
+            <div className={style.wrapper}>
+               <div className={style.items}>
+                  <div className={style.logo} >
+                     <Logo />
+                  </div>
                   <HeaderNav
                      burgerActive={burgerActive}
                      closeMenu={closeMenu}

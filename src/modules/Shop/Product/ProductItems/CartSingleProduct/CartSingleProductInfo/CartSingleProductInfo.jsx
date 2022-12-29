@@ -1,24 +1,23 @@
 import { Button } from "../../../../../../components/shared/Buttons/Button";
-import { MainTitle } from "../../../../../../components/shared/MainTitle";
 import { ButtonBack } from "../../../../../../components/shared/Buttons/ButtonBack";
+import style from "./CartSingleProductInfo.module.scss"
 
 export const CartSingleProductInfo = ({ categoryName, promotionalPrice, price, description, addToCart, productData }) => {
    return (
-      <div className="product__item">
-         <div className="product__item-wrapper">
-            <MainTitle
-               className="products__title"
-               titleText={categoryName}
-            />
-            <div className="product__price">
-               {promotionalPrice && <span className="product__promotional-price">$ {promotionalPrice} usd</span>}
-               <span className="product__new-price">$ {price} usd</span>
+      <div className={style.item}>
+         <div className={style.wrapper}>
+            <div className={style.title}>
+               {categoryName}
+            </div>
+            <div className={style.price}>
+               {promotionalPrice && <span className={style.promotionalPrice}>$ {promotionalPrice} usd</span>}
+               <span className={style.newPrice}>$ {price} usd</span>
             </div>
          </div>
-         <div className="product__description">
+         <div className={style.description}>
             {description}
          </div>
-         <div className="product__buttons">
+         <div className={style.buttons}>
             <Button
                className="product__button-add button"
                textButton=" add to cart"

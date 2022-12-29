@@ -1,9 +1,9 @@
 import { Route, Routes } from "react-router-dom";
-import { Home } from "./modules/Home/Home";
-import { AboutUs } from "./modules/AboutUs/AboutUs";
-import { ContactUs } from "./modules/ContactUs/ContactUs";
+import { Home } from "./modules/Home";
+import { AboutUs } from "./modules/AboutUs";
+import { ContactUs } from "./modules/ContactUs";
 import { Layout } from "./modules/Layout/Layout";
-import { Cart } from "./modules/Cart/Cart";
+import { Cart } from "./modules/Cart";
 import { ShopApp } from "./modules/Shop/ShopApp";
 import { ABOUT, CONTACT, CART, CATEGORIES } from "./constants/constants"
 

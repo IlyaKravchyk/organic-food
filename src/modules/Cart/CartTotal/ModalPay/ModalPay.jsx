@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Form } from "../../../../components/shared/Form/Form";
-import { FormItem } from "../../../../components/shared/Form/FormItem";
+import { FormItem } from "../../../../components/shared/Form/FormItem/FormItem";
 import { Modal } from "../../../../components/shared/Modal/Modal";
 
 export const ModalPay = ({ isModalPayOpen, setIsModalPayOpen }) => {
@@ -21,7 +21,7 @@ export const ModalPay = ({ isModalPayOpen, setIsModalPayOpen }) => {
 
    return (
       <Modal className="modal__pay" state={isModalPayOpen} setState={setIsModalPayOpen}>
-         <Form buttonName="pay" sumbitHandler={clearAndClose}>
+         <Form buttonName="pay" sumbitHandler={clearAndClose} classForm="form__items">
             <FormItem
                type="tel"
                value={cartNumber}

@@ -1,12 +1,13 @@
-import { CartButtons } from "./CartButtons/CartButtons";
+import { CartButtons } from "./CartButtons";
 import { ModalDelivery } from "./ModalDelivery/ModalDelivery";
 import { ModalPay } from "./ModalPay/ModalPay";
+import style from "./CartTotal.module.scss"
 
 export const CartTotal = ({ cart, getSumAllProduct, setIsModalDeliveryOpen, isModalDeliveryOpen, setIsModalPayOpen, isModalPayOpen }) => {
    return (
       <>
-         {(cart.length !== 0) && <div className="cart__total">
-            <div className="cart__full-price">
+         {(cart.length !== 0) && <div className={style.total}>
+            <div className={style.fullPrice}>
                Full price: $ {getSumAllProduct} <span>usd</span>
             </div>
             <CartButtons

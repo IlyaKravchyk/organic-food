@@ -1,0 +1,39 @@
+.utility {
+   text-align: left;
+   padding-left: 20px;
+
+   @media(max-width:1024px) {
+      width: 33%;
+   }
+
+   @media(max-width:765px) {
+      width: 100%;
+      text-align: center;
+   }
+
+   @media(max-width:600px) {
+      text-align: left;
+      padding: 0;
+   }
+
+   .title {
+      font-size: 30px;
+      line-height: 42px;
+      color: #274C5B;
+      text-transform: capitalize;
+      margin-bottom: 20px;
+
+   }
+
+   .pages {
+      @media(max-width:765px) {
+         display: flex;
+         justify-content: space-between;
+         align-items: flex-start;
+      }
+
+      @media(max-width:600px) {
+         flex-direction: column;
+      }
+   }
+}

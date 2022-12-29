@@ -1,0 +1,22 @@
+.item:not(:last-child) {
+   margin-right: 40px;
+}
+
+.link {
+   font-size: 22px;
+   color: #274C5B;
+   text-transform: capitalize;
+   transition: .2s;
+
+   @media(max-width:960px) {
+      font-size: 22px;
+      color: #fff;
+      display: inline-block;
+      padding: 10px 0;
+   }
+}
+
+.link.active {
+   color: #7EB693;
+   transition: .2s;
+}

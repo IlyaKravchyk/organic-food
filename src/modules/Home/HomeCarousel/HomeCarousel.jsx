@@ -1,7 +1,8 @@
 import { Carousel } from 'antd';
 import { useRef } from 'react';
 import { CarouselButton } from './CarouselButton/CarouselButton';
-import { CarouselSlide } from './CarouselSlide/CarouselSlide';
+import { CarouselSlide } from './CarouselSlide';
+import style from "./HomeCarousel.module.scss"
 
 export const HomeCarousel = () => {
    const ref = useRef()
@@ -14,7 +15,7 @@ export const HomeCarousel = () => {
    }
 
    return (
-      <div className='home__carousel'>
+      <div className={style.carousel}>
          <Carousel
             autoplay
             draggable
@@ -37,11 +38,11 @@ export const HomeCarousel = () => {
 
          </Carousel>
 
-         <CarouselButton className="home__btn-back" action={lastSlide}>
+         <CarouselButton className={style.btnBack} action={lastSlide}>
             <i className="fa fa-angle-left" aria-hidden="true"></i>
          </CarouselButton>
 
-         <CarouselButton className="home__btn-next" action={nextSlide}>
+         <CarouselButton className={style.btnNext} action={nextSlide}>
             <i className="fa fa-angle-right" aria-hidden="true"></i>
          </CarouselButton>
       </div >
