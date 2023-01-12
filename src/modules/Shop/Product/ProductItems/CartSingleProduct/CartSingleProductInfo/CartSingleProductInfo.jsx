@@ -2,20 +2,20 @@ import { Button } from "../../../../../../components/shared/Buttons/Button";
 import { ButtonBack } from "../../../../../../components/shared/Buttons/ButtonBack";
 import style from "./CartSingleProductInfo.module.scss"
 
-export const CartSingleProductInfo = ({ categoryName, promotionalPrice, price, description, addToCart, productData }) => {
+export const CartSingleProductInfo = ({ addToCart, productData }) => {
    return (
       <div className={style.item}>
          <div className={style.wrapper}>
             <div className={style.title}>
-               {categoryName}
+               {productData.name}
             </div>
             <div className={style.price}>
-               {promotionalPrice && <span className={style.promotionalPrice}>$ {promotionalPrice} usd</span>}
-               <span className={style.newPrice}>$ {price} usd</span>
+               {productData.promotionalPrice && <span className={style.promotionalPrice}>$ {productData.promotionalPrice} usd</span>}
+               <span className={style.newPrice}>$ {productData.price} usd</span>
             </div>
          </div>
          <div className={style.description}>
-            {description}
+            {productData.description}
          </div>
          <div className={style.buttons}>
             <Button

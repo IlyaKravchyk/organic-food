@@ -1,5 +1,6 @@
 import { NavItem } from "./NavItem";
-import style from "./HeaderNav.module.scss"
+import { ABOUT, CONTACT, CATEGORIES } from "../../../constants/constants"
+import style from "./HeaderNav.module.scss";
 
 export const HeaderNav = ({ burgerActive, closeMenu }) => {
    return (
@@ -10,17 +11,17 @@ export const HeaderNav = ({ burgerActive, closeMenu }) => {
                closeMenu={closeMenu}
             />
             <NavItem
-               link="/about"
+               link={`/${ABOUT}`}
                children="About us"
                closeMenu={closeMenu}
             />
             <NavItem
-               link="/categories"
+               link={`/${CATEGORIES}`}
                children="Shop"
                closeMenu={closeMenu}
             />
             <NavItem
-               link="/contact"
+               link={`/${CONTACT}`}
                children="Contact us"
                closeMenu={closeMenu}
             />

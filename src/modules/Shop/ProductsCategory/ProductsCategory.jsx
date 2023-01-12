@@ -1,20 +1,22 @@
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
-import productsCategoryStore from "./store/ProductsCategoryStore";
+import { ProductsCategoryStore } from "./store/ProductsCategoryStore";
 import { MainTitle } from "../../../components/shared/MainTitle";
 import { observer } from "mobx-react-lite";
 import { ButtonBack } from "../../../components/shared/Buttons/ButtonBack";
 import cartStore from "../../../stores/CartStore";
 import { ProductsItems } from "./ProductsItems";
 import style from "./ProductsCategory.module.scss"
+import { useState } from "react";
 
 export const ProductsCategory = observer(() => {
    const { addToCart } = cartStore
+   const [productsCategoryStore] = useState(new ProductsCategoryStore())
    const { categoriesProducts, loadCategoriesProducts } = productsCategoryStore
    const { products } = useParams()
 
    useEffect(() => {
-      loadCategoriesProducts()
+      loadCategoriesProducts(products)
    }, [])
 
    return (

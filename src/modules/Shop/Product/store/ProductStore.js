@@ -1,4 +1,5 @@
 import { makeAutoObservable, runInAction } from "mobx";
+import { notification } from 'antd';
 
 export class ProductStore {
 
@@ -14,13 +15,21 @@ export class ProductStore {
 
       this.isLoading = true
 
-      const response = await fetch(`http://localhost:3010/products/${productId}`)
-      const data = await response.json()
-      runInAction(() => {
-         this.productData = { ...data }
-         this.isLoading = false
-      })
+      try {
+         let response = await fetch(`http://localhost:3010/products/${productId}`)
+         if (response.status >= 400) {
+            notification.error({
+               message: response.text,
+               description: response.statusText
+            })
+            throw new Error(response)
+         }
+         let data = await response.json()
+         runInAction(() => this.productData = { ...data })
+      } catch (e) {
+         console.log(e)
+      } finally {
+         runInAction(() => this.isLoading = false)
+      }
    }
-
-
 }

@@ -1,6 +1,6 @@
 import cartStore from "../../../stores/CartStore";
 import { observer } from "mobx-react-lite";
-import style from "./HeaderCart.module.scss"
+import style from "./HeaderCart.module.scss";
 
 export const HeaderCart = observer(({ burgerActive, goCart, closeMenu }) => {
 

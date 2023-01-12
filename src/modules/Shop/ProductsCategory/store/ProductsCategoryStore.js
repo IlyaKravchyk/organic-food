@@ -1,6 +1,7 @@
 import { makeAutoObservable, runInAction } from "mobx";
+import { notification } from 'antd';
 
-class ProductsCategoryStore {
+export class ProductsCategoryStore {
 
    categoriesProducts = undefined;
 
@@ -8,20 +9,20 @@ class ProductsCategoryStore {
       makeAutoObservable(this)
    }
 
-   loadCategoriesProducts = () => {
-      if (!this.categoriesProducts) {
-         fetch('http://localhost:3010/products')
-            .then(response => response.json())
-            .then(data => runInAction(() => this.categoriesProducts = [...data]))
+   loadCategoriesProducts = async (category) => {
+      try {
+         let response = await fetch(`http://localhost:3010/products?category=${category}`)
+         if (response.status >= 400) {
+            notification.error({
+               message: response.status,
+               description: response.statusText
+            })
+            throw new Error(response)
+         }
+         let data = await response.json()
+         runInAction(() => this.categoriesProducts = [...data])
+      } catch (e) {
+         console.log(e);
       }
    }
-
-   addToCart = (product) => {
-      console.log(product);
-   }
-
 }
-
-const productsCategoryStore = new ProductsCategoryStore();
-
-export default productsCategoryStore
