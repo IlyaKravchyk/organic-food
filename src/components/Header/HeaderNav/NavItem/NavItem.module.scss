@@ -1,5 +1,32 @@
-.item:not(:last-child) {
-   margin-right: 40px;
+.item {
+   position: relative;
+
+   .button {
+      font-size: 24px;
+      padding-left: 5px;
+      cursor: pointer;
+      transition: .15s;
+      padding: 0;
+      margin: 0;
+
+      @media(max-width:960px) {
+         position: absolute;
+         top: 50%;
+         transform: translateY(-50%);
+         left: 60px;
+         color: #fff;
+      }
+   }
+
+
+   .button:hover {
+      font-size: 30px;
+      transition: .2s;
+   }
+
+   .button:active {
+      font-size: 24px;
+   }
 }
 
 .link {
@@ -19,4 +46,13 @@
 .link.active {
    color: #7EB693;
    transition: .2s;
+}
+
+.item:not(:last-child) {
+   margin-right: 40px;
+}
+
+.button.mobile {
+   transform-origin: 25% 20%;
+   transform: rotate(-90deg);
 }

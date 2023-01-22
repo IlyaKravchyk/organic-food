@@ -1,12 +1,13 @@
-import { Button } from "../../../../../components/shared/Buttons/Button";
+import { Button } from "../Buttons/Button";
 import { Link } from "react-router-dom";
-import style from "./ProductItem.module.scss"
+import style from "./Card.module.scss"
 
-export const ProductsItem = ({ categoriesProducts, addToCart }) => {
+export const Card = ({ categoriesProducts, addToCart, linkTo }) => {
+
    return (
       <div className={style.item} >
          <div className={style.image}>
-            <Link to={`./${categoriesProducts.id}`}>
+            <Link to={linkTo}>
                <img src={categoriesProducts.image} alt={categoriesProducts.name} />
             </Link>
          </div>

@@ -7,7 +7,7 @@ import { HeaderCart } from "./HeaderCart";
 import { CART } from "../../constants/constants";
 import style from "./Header.module.scss"
 
-export const Header = () => {
+export const Header = ({ allPoductsStore }) => {
    const navigate = useNavigate()
    const [burgerActive, setBurgerActive] = useState(false)
 
@@ -31,6 +31,7 @@ export const Header = () => {
                      <Logo />
                   </div>
                   <HeaderNav
+                     allPoductsStore={allPoductsStore}
                      burgerActive={burgerActive}
                      closeMenu={closeMenu}
                   />

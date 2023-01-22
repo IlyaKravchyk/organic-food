@@ -26,7 +26,6 @@ export const ProductsCategory = observer(() => {
                titleText={products}
             />
             <ProductsItems
-               hashParams={products}
                categoriesProducts={categoriesProducts}
                addToCart={addToCart}
             />

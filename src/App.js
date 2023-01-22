@@ -6,6 +6,7 @@ import { Layout } from "./modules/Layout/Layout";
 import { Cart } from "./modules/Cart";
 import { ShopApp } from "./modules/Shop/ShopApp";
 import { ABOUT, CONTACT, CART, CATEGORIES } from "./constants/constants"
+import { AllPoducts } from "./modules/Shop/AllPoducts/AllPoducts";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
             <Route path={ABOUT} element={<AboutUs />}></Route>
             <Route path={CONTACT} element={<ContactUs />}></Route>
             <Route path={CART} element={<Cart />}></Route>
+            <Route path='allProducts' element={<AllPoducts />} />
             <Route path={`${CATEGORIES}/*`} element={<ShopApp />}></Route>
          </Route>
       </Routes >

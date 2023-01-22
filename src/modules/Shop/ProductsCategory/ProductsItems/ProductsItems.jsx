@@ -1,4 +1,4 @@
-import { ProductsItem } from "./ProductsItem";
+import { Card } from "../../../../components/shared/Card/Card"
 import style from "./ProductsItems.module.scss"
 
 export const ProductsItems = ({ categoriesProducts, addToCart }) => {
@@ -7,10 +7,11 @@ export const ProductsItems = ({ categoriesProducts, addToCart }) => {
          {!categoriesProducts && <div className="loader"></div>}
          {categoriesProducts && categoriesProducts.map(categoriesProducts => {
             return (
-               <ProductsItem
+               <Card
                   key={categoriesProducts.id}
                   categoriesProducts={categoriesProducts}
                   addToCart={addToCart}
+                  linkTo={`./${categoriesProducts.id}`}
                />
             )
          })}
