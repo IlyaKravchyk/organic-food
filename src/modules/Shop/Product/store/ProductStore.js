@@ -16,7 +16,7 @@ export class ProductStore {
       this.isLoading = true
 
       try {
-         let response = await fetch(`http://localhost:3010/products/${productId}`)
+         let response = await fetch(`https://organic-food-api.onrender.com/products/${productId}`)
          if (response.status >= 400) {
             notification.error({
                message: response.text,

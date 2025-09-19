@@ -12,7 +12,7 @@ class AllPoductsStore {
 
    loadAllProductsData = async (page = 1) => {
       try {
-         let response = await fetch(`http://localhost:3010/products?_page=${page}&_limit=${this.cardInPage}`)
+         let response = await fetch(`https://organic-food-api.onrender.com/products?_page=${page}&_limit=${this.cardInPage}`)
          if (response.status >= 400) {
             notification.error({
                message: response.status,

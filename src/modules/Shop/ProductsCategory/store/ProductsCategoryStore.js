@@ -11,7 +11,7 @@ export class ProductsCategoryStore {
 
    loadCategoriesProducts = async (category) => {
       try {
-         let response = await fetch(`http://localhost:3010/products?category=${category}`)
+         let response = await fetch(`https://organic-food-api.onrender.com/products?category=${category}`)
          if (response.status >= 400) {
             notification.error({
                message: response.status,

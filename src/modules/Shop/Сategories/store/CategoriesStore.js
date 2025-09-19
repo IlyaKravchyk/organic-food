@@ -10,7 +10,7 @@ class CategoriesStore {
 
    loadCategoriesData = async () => {
       try {
-         let response = await fetch('http://localhost:3010/categories')
+         let response = await fetch('https://organic-food-api.onrender.com/categories')
          if (response.status >= 400) {
             notification.error({
                message: response.status,
